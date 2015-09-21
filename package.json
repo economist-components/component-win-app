@@ -1,12 +1,12 @@
 {
-  "name": "@economist/component-tq-app",
+  "name": "@economist/component-win-app",
   "version": "1.0.0",
-  "description": "The TQ React App",
+  "description": "The WIN React App",
   "author": "The Economist (http://economist.com)",
   "license": "MIT",
-  "repository": "git@github.com:the-economist-editorial/component-tq-app.git",
-  "homepage": "https://github.com/the-economist-editorial/component-tq-app/wiki",
-  "bugs": "https://github.com/the-economist-editorial/component-tq-app/issues",
+  "repository": "git@github.com:the-economist-editorial/component-win-app.git",
+  "homepage": "https://github.com/the-economist-editorial/component-win-app/wiki",
+  "bugs": "https://github.com/the-economist-editorial/component-win-app/issues",
   "main": "index.js",
   "files": [
     "*.js",
