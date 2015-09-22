@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { Locations, Location, NotFound } from 'react-router-component';
 import CaptureClicks from 'react-router-component/lib/CaptureClicks';
+
 import StickyMasthead from '@economist/component-stickymasthead';
 import ShareBar from '@economist/component-sharebar';
 import Icon from '@economist/component-icon';
@@ -9,7 +11,7 @@ import ArticlePage from '@economist/component-articletemplate';
 import HomePage from '@economist/component-storytiles';
 import FourOFourPage from '@economist/component-404';
 
-export default class WorldIfApp extends React.Component {
+export default class WorldInApp extends React.Component {
 
   static get propTypes() {
     return {
@@ -32,27 +34,27 @@ export default class WorldIfApp extends React.Component {
 
   render() {
     return (
-      <div className="WorldIfApp">
-          <StickyMasthead className="WorldIfApp--header" topOffset="1">
+      <div className="WorldInApp">
+          <StickyMasthead className="WorldInApp--header" topOffset="1">
             <MoreMenu/>
-            <a href="/" className="WorldIfApp--header-logo StickyMasthead--hidden">
-              <h1 className="WorldIfApp--header-logo-title">The World</h1>
+            <a href="/" className="WorldInApp--header-logo StickyMasthead--hidden">
+              <h1 className="WorldInApp--header-logo-title">The World</h1>
               <Icon
-                icon="worldif"
-                className="WorldIfApp--header-logo-icon"
+                icon="worldin"
+                className="WorldInApp--header-logo-icon"
                 background="none"
                 size="100%"
               />
             </a>
-            <div className="WorldIfApp--header-sharebar StickyMasthead--visible touch">
-              <div className="WorldIfApp--header-sharebar-container">
+            <div className="WorldInApp--header-sharebar StickyMasthead--visible touch">
+              <div className="WorldInApp--header-sharebar-container">
                 <ShareBar
                   fxDirection="flip-to-top"
                   fxType="cube"
                   background="#333333"
                   fxDefaultStateBackground="#999999"/>
               </div>
-              <a href="/" className="WorldIfApp--header-sharebar-home">
+              <a href="/" className="WorldInApp--header-sharebar-home">
                 <Icon
                   icon="home"
                   color="white"
@@ -63,7 +65,7 @@ export default class WorldIfApp extends React.Component {
             </div>
           </StickyMasthead>
         <CaptureClicks>
-          <div className="WorldIfApp--content" role="main">
+          <div className="WorldInApp--content" role="main">
             <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
               <Location path="/" handler={HomePage} />
               <Location path="/article/:id" handler={ArticlePage} />
