@@ -128,7 +128,6 @@
   "dependencies": {
     "@economist/component-404": "^2.0.0",
     "@economist/component-articletemplate": "^6.3.1",
-    "@economist/component-devpack": "^3.4.2",
     "@economist/component-font-neutra2": "^1.0.4",
     "@economist/component-icon": "^3.0.4",
     "@economist/component-moremenu": "^2.0.0",
@@ -142,7 +141,7 @@
     "react-router-component": "^0.26.0"
   },
   "devDependencies": {
-    "@economist/component-devpack": "^2.5.0",
+    "@economist/component-devpack": "^3.4.3",
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "browser-sync": "^2.8.2",
