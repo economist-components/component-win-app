@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { Locations, Location, NotFound } from 'react-router-component';
 import CaptureClicks from 'react-router-component/lib/CaptureClicks';
+
 import StickyMasthead from '@economist/component-stickymasthead';
 import ShareBar from '@economist/component-sharebar';
 import Icon from '@economist/component-icon';
@@ -38,7 +40,7 @@ export default class WorldInApp extends React.Component {
             <a href="/" className="WorldInApp--header-logo StickyMasthead--hidden">
               <h1 className="WorldInApp--header-logo-title">The World</h1>
               <Icon
-                icon="worldif"
+                icon="worldin"
                 className="WorldInApp--header-logo-icon"
                 background="none"
                 size="100%"

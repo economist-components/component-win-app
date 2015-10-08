@@ -151,7 +151,7 @@
   background-color: #000;
 }
 
-.WorldInApp .my-subscription-menu ul li:hover, 
+.WorldInApp .my-subscription-menu ul li:hover,
 .more-from-economist-menu ul li:hover {
   text-decoration: underline;
 }
@@ -167,7 +167,7 @@
   background-color: #38A8E0 !important;
 }
 
-.WorldInApp .WorldInApp--header-logo, 
+.WorldInApp .WorldInApp--header-logo,
 .WorldInApp--header-sharebar {
   float: right;
   height: 100%;

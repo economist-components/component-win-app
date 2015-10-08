@@ -1,5 +1,7 @@
 import React from 'react';
-import WorldInApp from './index.es6';
+
+import WorldInApp from '.';
+
 export default (
   <WorldInApp path="/404" />
 );
