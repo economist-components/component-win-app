@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Locations, Location, NotFound } from 'react-router-component';
-import CaptureClicks from 'react-router-component/lib/CaptureClicks';
+// import CaptureClicks from 'react-router-component/lib/CaptureClicks';
 import FourOhFourPage from '@economist/component-404';
-import Icon from '@economist/component-icon';
+// import Icon from '@economist/component-icon';
 
 // Seb is fixing...
 // import ArticlePage from '@economist/component-articletemplate';
@@ -36,26 +36,12 @@ export default class WorldInApp extends React.Component {
         <div className="WorldInApp--header">
           <a href="/" className="WorldInApp--header-logo StickyMasthead--hidden">
             <h1 className="WorldInApp--header-logo-title">The World</h1>
-            <Icon
-              icon="worldin"
-              className="WorldInApp--header-logo-icon"
-              background="none"
-              size="100%"
-            />
           </a>
           <div className="WorldInApp--header-sharebar StickyMasthead--visible touch">
             <div className="WorldInApp--header-sharebar-container"></div>
-            <a href="/" className="WorldInApp--header-sharebar-home">
-              <Icon
-                icon="home"
-                color="white"
-                background="rgb(51, 189, 235)"
-                size="100%"
-              />
-            </a>
           </div>
         </div>
-        <CaptureClicks>
+        <div>
           <div className="WorldInApp--content" role="main">
             <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
               <Location path="/" handler={<div>Hello world.</div>} />
@@ -64,7 +50,7 @@ export default class WorldInApp extends React.Component {
               <NotFound handler={FourOhFourPage}/>
             </Locations>
           </div>
-        </CaptureClicks>
+        </div>
       </div>
     );
   }
