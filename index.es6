@@ -1,15 +1,7 @@
 import React from 'react';
 
 import { Locations, Location, NotFound } from 'react-router-component';
-import CaptureClicks from 'react-router-component/lib/CaptureClicks';
-
-import StickyMasthead from '@economist/component-stickymasthead';
-import ShareBar from '@economist/component-sharebar';
-import Icon from '@economist/component-icon';
-import MoreMenu from '@economist/component-moremenu';
-import ArticlePage from '@economist/component-articletemplate';
-import HomePage from '@economist/component-storytiles';
-import FourOFourPage from '@economist/component-404';
+import FourOhFourPage from '@economist/component-404';
 
 export default class WorldInApp extends React.Component {
 
@@ -35,45 +27,24 @@ export default class WorldInApp extends React.Component {
   render() {
     return (
       <div className="WorldInApp">
-          <StickyMasthead className="WorldInApp--header" topOffset="1">
-            <MoreMenu/>
-            <a href="/" className="WorldInApp--header-logo StickyMasthead--hidden">
-              <h1 className="WorldInApp--header-logo-title">The World</h1>
-              <Icon
-                icon="worldin"
-                className="WorldInApp--header-logo-icon"
-                background="none"
-                size="100%"
-              />
-            </a>
-            <div className="WorldInApp--header-sharebar StickyMasthead--visible touch">
-              <div className="WorldInApp--header-sharebar-container">
-                <ShareBar
-                  fxDirection="flip-to-top"
-                  fxType="cube"
-                  background="#333333"
-                  fxDefaultStateBackground="#999999"/>
-              </div>
-              <a href="/" className="WorldInApp--header-sharebar-home">
-                <Icon
-                  icon="home"
-                  color="white"
-                  background="rgb(51, 189, 235)"
-                  size="100%"
-                />
-              </a>
-            </div>
-          </StickyMasthead>
-        <CaptureClicks>
+        <div className="WorldInApp--header">
+          <a href="/" className="WorldInApp--header-logo StickyMasthead--hidden">
+            <h1 className="WorldInApp--header-logo-title">The World</h1>
+          </a>
+          <div className="WorldInApp--header-sharebar StickyMasthead--visible touch">
+            <div className="WorldInApp--header-sharebar-container"></div>
+          </div>
+        </div>
+        <div>
           <div className="WorldInApp--content" role="main">
             <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
-              <Location path="/" handler={HomePage} />
-              <Location path="/article/:id" handler={ArticlePage} />
-              <Location path="/article/:id/:slug" handler={ArticlePage} />
-              <NotFound handler={FourOFourPage}/>
+              <Location path="/" handler={<div>Hello world.</div>} />
+              <Location path="/article/:id" handler={<div>An article goes here.</div>} />
+              <Location path="/article/:id/:slug" handler={<div>An article goes here.</div>} />
+              <NotFound handler={FourOhFourPage}/>
             </Locations>
           </div>
-        </CaptureClicks>
+        </div>
       </div>
     );
   }
