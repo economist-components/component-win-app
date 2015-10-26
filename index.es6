@@ -1,12 +1,7 @@
 import React from 'react';
 
 import { Locations, Location, NotFound } from 'react-router-component';
-// import CaptureClicks from 'react-router-component/lib/CaptureClicks';
 import FourOhFourPage from '@economist/component-404';
-// import Icon from '@economist/component-icon';
-
-// Seb is fixing...
-// import ArticlePage from '@economist/component-articletemplate';
 
 export default class WorldInApp extends React.Component {
 
@@ -29,7 +24,6 @@ export default class WorldInApp extends React.Component {
     }
   }
 
-  // removed to get this to build for now... <NotFound handler={FourOhFourPage}/>
   render() {
     return (
       <div className="WorldInApp">
