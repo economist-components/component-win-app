@@ -1,4 +1,5 @@
 import React, { PropTypes, Component } from 'react';
+import CaptureClicks from 'react-router-component/lib/CaptureClicks';
 import RouteHandler from './routing';
 
 import DefaultAppHeader from './header';
@@ -32,11 +33,13 @@ export default class App extends Component {
     const { AppContainer, AppHeader, AppContent, AppFooter } = this.props.components;
     return (
       <AppContainer>
-        <AppHeader />
-        <AppContent>
-          <RouteHandler path={path} />
-        </AppContent>
-        <AppFooter />
+        <CaptureClicks>
+          <AppHeader />
+          <AppContent>
+            <RouteHandler path={path} />
+          </AppContent>
+          <AppFooter />
+        </CaptureClicks>
       </AppContainer>
     );
   }
