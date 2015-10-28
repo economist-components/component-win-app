@@ -11,7 +11,8 @@ export default class WorldInApp extends Component {
   }
 
   scrollToTop() {
-    if (typeof window !== 'undefined' && window.document) {
+    const isBrowser = typeof window !== 'undefined' && window.document;
+    if (isBrowser) {
       window.scrollTo(0, 0);
     }
   }
