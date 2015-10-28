@@ -1,19 +1,13 @@
-import React from 'react';
+import React, { PropTypes, Component } from 'react';
 
 import { Locations, Location, NotFound } from 'react-router-component';
-import FourOhFourPage from '@economist/component-404';
-
-export default class WorldInApp extends React.Component {
+import NotFoundHandler from '@economist/component-404';
+const HomePageHandler = <div>Hello world.</div>;
+const ArticlePageHandler = <div>An article goes here.</div>;
+export default class WorldInApp extends Component {
 
   static propTypes = {
-    path: React.PropTypes.string.isRequired,
-    onClose: React.PropTypes.func,
-    onOpen: React.PropTypes.func,
-  }
-
-  constructor() {
-    super();
-    this.state = { open: false };
+    path: PropTypes.string.isRequired,
   }
 
   scrollToTop() {
@@ -23,6 +17,7 @@ export default class WorldInApp extends React.Component {
   }
 
   render() {
+    const path = this.props.path || '/';
     return (
       <div className="WorldInApp">
         <div className="WorldInApp--header">
@@ -35,11 +30,11 @@ export default class WorldInApp extends React.Component {
         </div>
         <div>
           <div className="WorldInApp--content" role="main">
-            <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
-              <Location path="/" handler={<div>Hello world.</div>} />
-              <Location path="/article/:id" handler={<div>An article goes here.</div>} />
-              <Location path="/article/:id/:slug" handler={<div>An article goes here.</div>} />
-              <NotFound handler={FourOhFourPage}/>
+            <Locations ref="router" path={path} onNavigation={this.scrollToTop}>
+              <Location path="/" handler={HomePageHandler} />
+              <Location path="/article/:id" handler={ArticlePageHandler} />
+              <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
+              <NotFound handler={NotFoundHandler}/>
             </Locations>
           </div>
         </div>
