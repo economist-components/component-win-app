@@ -1,20 +1,10 @@
 import React, { PropTypes, Component } from 'react';
+import RouteHandler from './routing';
 
-import { Locations, Location, NotFound } from 'react-router-component';
-import NotFoundHandler from '@economist/component-404';
-const HomePageHandler = <div>Hello world.</div>;
-const ArticlePageHandler = <div>An article goes here.</div>;
 export default class WorldInApp extends Component {
 
   static propTypes = {
     path: PropTypes.string.isRequired,
-  }
-
-  scrollToTop() {
-    const isBrowser = typeof window !== 'undefined' && window.document;
-    if (isBrowser) {
-      window.scrollTo(0, 0);
-    }
   }
 
   render() {
@@ -31,12 +21,7 @@ export default class WorldInApp extends Component {
         </div>
         <div>
           <div className="WorldInApp--content" role="main">
-            <Locations ref="router" path={path} onNavigation={this.scrollToTop}>
-              <Location path="/" handler={HomePageHandler} />
-              <Location path="/article/:id" handler={ArticlePageHandler} />
-              <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
-              <NotFound handler={NotFoundHandler}/>
-            </Locations>
+            <RouteHandler path={path} />
           </div>
         </div>
       </div>
