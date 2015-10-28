@@ -5,12 +5,10 @@ import FourOhFourPage from '@economist/component-404';
 
 export default class WorldInApp extends React.Component {
 
-  static get propTypes() {
-    return {
-      path: React.PropTypes.string.isRequired,
-      onClose: React.PropTypes.func,
-      onOpen: React.PropTypes.func,
-    };
+  static propTypes = {
+    path: React.PropTypes.string.isRequired,
+    onClose: React.PropTypes.func,
+    onOpen: React.PropTypes.func,
   }
 
   constructor() {
