@@ -1,30 +1,43 @@
 import React, { PropTypes, Component } from 'react';
 import RouteHandler from './routing';
 
-export default class WorldInApp extends Component {
+import DefaultAppHeader from './header';
+import {
+  AppContainer as DefaultAppContainer,
+  AppContentContainer as DefaultAppContentContainer,
+} from './containers';
+
+export default class App extends Component {
 
   static propTypes = {
     path: PropTypes.string.isRequired,
+    components: PropTypes.shape({
+      AppContainer: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]).isRequired,
+      AppHeader: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]),
+      AppContent: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]).isRequired,
+      AppFooter: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]),
+    }),
+  }
+
+  static defaultProps = {
+    components: {
+      AppContainer: DefaultAppContainer,
+      AppHeader: DefaultAppHeader,
+      AppContent: DefaultAppContentContainer,
+    },
   }
 
   render() {
     const path = this.props.path || '/';
+    const { AppContainer, AppHeader, AppContent, AppFooter } = this.props.components;
     return (
-      <div className="WorldInApp">
-        <div className="WorldInApp--header">
-          <a href="/" className="WorldInApp--header-logo StickyMasthead--hidden">
-            <h1 className="WorldInApp--header-logo-title">The World</h1>
-          </a>
-          <div className="WorldInApp--header-sharebar StickyMasthead--visible touch">
-            <div className="WorldInApp--header-sharebar-container"></div>
-          </div>
-        </div>
-        <div>
-          <div className="WorldInApp--content" role="main">
-            <RouteHandler path={path} />
-          </div>
-        </div>
-      </div>
+      <AppContainer>
+        <AppHeader />
+        <AppContent>
+          <RouteHandler path={path} />
+        </AppContent>
+        <AppFooter />
+      </AppContainer>
     );
   }
 }
