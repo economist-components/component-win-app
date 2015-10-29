@@ -1,33 +1,17 @@
 # component-win-app
 > A World In App component
 
-A `WorldInApp` is an `App` with a `react-router-component` `Router` defined
-and passed in as its `content`.
+A `WorldInApp` is an `App` with a [`react-router-component`](https://github.com/STRML/react-router-component)
+`Router` defined and passed in as its `content`.
 
-An `App` is a composition of `{ AppContainer, AppHeader?, AppContent, AppFooter? }`.
-An `App` make receive some `content` as its `React.children`.
+An `App` is a composition of `{ AppContainer, AppHeader?, AppContentContainer, AppFooter? }`.
+An `App` may receive some `content` as its `React.children`.
 
 ## TODO
 
 ### `component-win-app`
 
 #### `component-win-app/index.es6`
-- [x] Find out why `onOpen` and `onClose` existed and the `state` that relates
-      to them. Looks like they can probably be completely removed.
-- [x] Try `static propTypes = {}` instead of the function call.
-- [x] `PropTypes` destructured from the import.
-- [x] Create `isBrowser` constant for searchability and consistency.
-- [x] `scrollToTop` should probably be a function detached from the component.
-- [x] The `routing` should be defined elsewhere alongside `scrollToTop`, and
-      should expose itself as `<RouteHandler>` which can be placed within an
-      `<AppContent>`.
-- [x] The `index.es6` should compose an `<AppContainer>`, `<AppHeader>`, and
-      `<AppContent>`.
-- [x] `<AppContainer>` should contain a `<CaptureClicks>` surrounding everything
-       hyperlinkable.
-       It shouldn't have been removed.
-       See: http://andreypopp.viewdocs.io/react-router-component/a-elements/
-       See: https://github.com/the-economist-editorial/component-win-app/blob/6c87920c0784ea720fba0a478696601c76ebbb22/index.es6#L4
 - [ ] Move an icon back in:
       See: https://github.com/the-economist-editorial/component-win-app/blob/6c87920c0784ea720fba0a478696601c76ebbb22/index.es6#L42
 - [ ] `<StickyMasthead> `should be used to help create the `<AppHeader>`. It will
@@ -45,12 +29,10 @@ An `App` make receive some `content` as its `React.children`.
 - [ ] Lose the share icons styling and some other cruft which does not relate to us.
 - [ ] Write tests.
 - [ ] Import `component-win-articlepage` and `component-win-homepage` styling, etc.
+- [ ] Decide how we are going to create the country list page.
 
 #### `component-win-app/index.css`
-- [x] Should not import storytiles css.
-- [x] Should lose some of the styling related to the sharebar which will not
-      exist.
-- [ ] Probably most of the styling should be rewritten.
+- [ ] Most of the styling should be rewritten.
 
 ### `component-404`
 
@@ -102,6 +84,12 @@ An `App` make receive some `content` as its `React.children`.
 
 ### `component-articletemplate/index.es6`
 - [ ] Fix the issues raised in the PR.
+- [ ] Create a `variantify` component.
+- [ ] Write `README.md` for variantify, teaching people what problems it solves
+      and how it solves them. The `README` should also give insight of which
+      components to wrap - my principle is that variation should (1) be lazy:
+      you should make rendering/behaviour choices as close to the action
+      as possible, instead of dependency injecting them in very deep.
 
 ### `component-win-homepage`
 
