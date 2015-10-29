@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import { Locations, Location, NotFound } from 'react-router-component';
 import scrollToTop from './scroll-to-top';
 
-import WorldInApp from './app';
+import App from './app';
 import NotFoundHandler from '@economist/component-404';
 import HomePageHandler from './homepage';
 import ArticlePageHandler from './articlepage';
 
-export default ({ path, ...remainingProps }) => (
-  <WorldInApp
+const WorldInApp = ({ path, ...remainingProps }) => (
+  <App
     path={path}
     title="World In"
     {...remainingProps}
@@ -20,5 +20,10 @@ export default ({ path, ...remainingProps }) => (
       <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
       <NotFound handler={NotFoundHandler}/>
     </Locations>
-  </WorldInApp>
+  </App>
 );
+WorldInApp.propTypes = {
+  path: PropTypes.string.isRequired,
+};
+
+export default WorldInApp;
