@@ -1,22 +1,21 @@
 @import '@economist/component-font-neutra2';
 @import '@economist/component-icon';
 @import '@economist/component-articletemplate';
-@import '@economist/component-storytiles';
-@import '@economist/component-404'
+@import '@economist/component-404';
 
 .mnv-ec-share.cube {
   transition: all .0s ease;
 }
 
-.WorldInApp {
+.world-in-App {
   max-width: 1190px;
   margin: 67px auto 0;
   position: relative;
   width: 100%;
 }
 
-.WorldInApp .Masthead,
-.WorldInApp--header {
+.world-in-App .Masthead,
+.world-in-App--header {
   max-width: 1190px;
   width: 100%;
   position: fixed;
@@ -28,27 +27,27 @@
 }
 
 @media (max-width: 1190px) {
-  .WorldInApp .Masthead,
-  .WorldInApp--header {
+  .world-in-App .Masthead,
+  .world-in-App--header {
     left: 0 !important;
   }
 
 }
 
-.WorldInApp--header.sticky {
+.world-in-App--header.sticky {
   margin-top: 0;
 }
 
-.WorldInApp .Masthead--container > * {
+.world-in-App .Masthead--container > * {
   display: inline-block;
   -webkit-font-smoothing: antialiased;
 }
 
-.WorldInApp .Masthead--container {
+.world-in-App .Masthead--container {
   height: 100%;
 }
 
-.WorldInApp--header-logo-title {
+.world-in-App--header-logo-title {
   font-family: Neutra2Display-Titling;
   display: inline-block;
   font-size: 37px;
@@ -60,23 +59,23 @@
   line-height: 62px;
 }
 
-.WorldInApp .Masthead {
+.world-in-App .Masthead {
   height: 67px;
 }
 
-.WorldInApp .Masthead--logo {
+.world-in-App .Masthead--logo {
   width: 80px;
   height: 100%;
   border-right: 1px solid #929ca2;
   position: relative;
 }
 
-.WorldInApp .Masthead--logo:hover {
+.world-in-App .Masthead--logo:hover {
   background: black;
   cursor: pointer;
 }
 
-.WorldInApp .Masthead .Masthead--logo .Icon-economist-small {
+.world-in-App .Masthead .Masthead--logo .Icon-economist-small {
   height: 26px !important;
   width: 26px !important;
   position: absolute;
@@ -86,27 +85,27 @@
   padding: 0;
 }
 
-.WorldInApp .Icon-worldif {
+.world-in-App .Icon-worldif {
   height: 67px;
   width: 67px;
 }
 
-.WorldInApp .Masthead .user-more-menu {
+.world-in-App .Masthead .user-more-menu {
   height: 100%;
   position: relative;
 }
 
-.WorldInApp .Masthead .user-more-menu .menu {
+.world-in-App .Masthead .user-more-menu .menu {
   z-index: 1000;
   outline: 0;
 }
 
-.WorldInApp .user-more-menu .submenu {
+.world-in-App .user-more-menu .submenu {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   width: 321px;
 }
 
-.WorldInApp .Masthead .user-more-menu .Icon-hamburger {
+.world-in-App .Masthead .user-more-menu .Icon-hamburger {
   height: 56px;
   width: 56px;
   position: absolute;
@@ -117,20 +116,20 @@
   fill: #fff;
 }
 
-.WorldInApp .Masthead .user-more-menu ul {
+.world-in-App .Masthead .user-more-menu ul {
   height: 100%;
 }
 
-.WorldInApp .Masthead .user-more-menu > ul > li {
+.world-in-App .Masthead .user-more-menu > ul > li {
   width: 80px;
   height: 100%;
 }
 
-.WorldInApp .Masthead .my-subscription-menu {
+.world-in-App .Masthead .my-subscription-menu {
   width: 100%;
 }
 
-.WorldInApp .Masthead .user-more-menu .subscription-menu {
+.world-in-App .Masthead .user-more-menu .subscription-menu {
   font-family: Neutra2Display;
   height: 100%;
   position: absolute;
@@ -142,34 +141,34 @@
   width: 136px;
 }
 
-.WorldInApp .Masthead .user-more-menu .subscription-menu:hover {
+.world-in-App .Masthead .user-more-menu .subscription-menu:hover {
   cursor: pointer;
   background-color: #000;
 }
 
-.WorldInApp .my-subscription-menu ul li:hover,
+.world-in-App .my-subscription-menu ul li:hover,
 .more-from-economist-menu ul li:hover {
   text-decoration: underline;
 }
 
-.WorldInApp--header-sharebar {
+.world-in-App--header-sharebar {
   position: absolute;
   right: 0;
 }
 
-.WorldInApp .Icon-home {
+.world-in-App .Icon-home {
   width: 67px;
   height: 67px;
   background-color: #38A8E0 !important;
 }
 
-.WorldInApp .WorldInApp--header-logo,
-.WorldInApp--header-sharebar {
+.world-in-App .world-in-App--header-logo,
+.world-in-App--header-sharebar {
   float: right;
   height: 100%;
 }
 
-.WorldInApp--header-sharebar-home {
+.world-in-App--header-sharebar-home {
   position: absolute;
   right: 0;
   background-color: transparent;
@@ -177,13 +176,13 @@
   z-index: 11;
 }
 
-.WorldInApp--header-sharebar .container {
+.world-in-App--header-sharebar .container {
   float: left;
   height: 67px;
   width: 100%;
 }
 
-.WorldInApp--header .controls {
+.world-in-App--header .controls {
   height: 100%;
   width: 68px;
   background-color: #5D5D5D;
@@ -191,79 +190,79 @@
   right: 67px;
 }
 
-.WorldInApp--header .controls:hover {
+.world-in-App--header .controls:hover {
   cursor: pointer;
   background-color: #000;
 }
 
-.WorldInApp--header .Icon-share,
-.WorldInApp--header .Icon-close {
+.world-in-App--header .Icon-share,
+.world-in-App--header .Icon-close {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.WorldInApp--header .fxOff {
+.world-in-App--header .fxOff {
   width: 240px;
 }
 
-.WorldInApp--header .fxOn {
+.world-in-App--header .fxOn {
   width: 388px;
 }
 
-.WorldInApp--header .mnv-ec-share-icons {
+.world-in-App--header .mnv-ec-share-icons {
   background: transparent !important;
 }
 
-.WorldInApp--header .mnv-ec-share-icons a {
+.world-in-App--header .mnv-ec-share-icons a {
   border-radius: 50%;
   background: #929ca2;
   margin: 14px 0 0 10px;
 }
 
-.WorldInApp--header .mnv-ec-share-icons-container {
+.world-in-App--header .mnv-ec-share-icons-container {
   height: 68px;
   background: linear-gradient(to right, rgba(51,51,51,0) 0%,rgba(51,51,51,1) 10%,rgba(51,51,51,1) 100%);
   background-color: #333;
   width: calc(100% - 121px);
 }
 
-.WorldInApp--header .mnv-ec-share-icons-container {
+.world-in-App--header .mnv-ec-share-icons-container {
   width: 353px;
 }
 
-.WorldInApp--header .mnv-ec-share-icons a,
-.WorldInApp--header .mnv-ec-share-icons svg {
+.world-in-App--header .mnv-ec-share-icons a,
+.world-in-App--header .mnv-ec-share-icons svg {
   width: 40px;
   height: 40px
 }
 
-.WorldInApp .mnv-ec-share-icons .fb:hover {
+.world-in-App .mnv-ec-share-icons .fb:hover {
   background: #3b5998;
 }
 
-.WorldInApp .mnv-ec-share-icons .twitter:hover {
+.world-in-App .mnv-ec-share-icons .twitter:hover {
   background: #00aced;
 }
 
-.WorldInApp .mnv-ec-share-icons .gplus:hover {
+.world-in-App .mnv-ec-share-icons .gplus:hover {
   background: #dd4b39;
 }
 
-.WorldInApp .mnv-ec-share-icons .linkedin:hover {
+.world-in-App .mnv-ec-share-icons .linkedin:hover {
   background: #007bb6;
 }
 
-.WorldInApp .mnv-ec-share-icons .whatsapp:hover {
+.world-in-App .mnv-ec-share-icons .whatsapp:hover {
   background: #39b54a;
 }
 
-.WorldInApp .mnv-ec-share-icons .mail:hover {
+.world-in-App .mnv-ec-share-icons .mail:hover {
   background: #666666;
 }
 
-.WorldInApp .mnv-ec-share-icons .Icon {
+.world-in-App .mnv-ec-share-icons .Icon {
   border-radius: 50%;
 }
 
@@ -276,196 +275,196 @@
 
 @media (max-width: 680px) {
 
-  .WorldInApp {
+  .world-in-App {
     margin: 50px auto 0;
   }
 
-  .WorldInApp--header-logo-title {
+  .world-in-App--header-logo-title {
     font-size: 28px;
     line-height: 44px;
   }
 
-  .WorldInApp .Masthead {
+  .world-in-App .Masthead {
     height: 50px;
   }
 
-  .WorldInApp .Masthead .Masthead--logo {
+  .world-in-App .Masthead .Masthead--logo {
     width: 50px;
   }
 
-  .WorldInApp .Masthead .user-more-menu > ul > li {
+  .world-in-App .Masthead .user-more-menu > ul > li {
     width: 60px;
   }
 
-  .WorldInApp .Masthead .user-more-menu .subscription-menu {
+  .world-in-App .Masthead .user-more-menu .subscription-menu {
     line-height: 52px;
     padding: 0 10px;
     width: 114px;
   }
 
-  .WorldInApp .Icon-home{
+  .world-in-App .Icon-home{
     width: 50px;
     height: 50px;
   }
 
-  .WorldInApp .Icon-worldif {
+  .world-in-App .Icon-worldif {
     height: 50px;
     width: 50px;
   }
 
-  .WorldInApp--header .mnv-ec-share-icons-container {
+  .world-in-App--header .mnv-ec-share-icons-container {
     height: 50px;
     width: calc(100% - 100px);
     left: 0;
   }
 
-  .WorldInApp--header .controls {
+  .world-in-App--header .controls {
     height: 50px;
     width: 50px;
     right: 50px;
   }
 
-  .WorldInApp--header .mnv-ec-share-icons a {
+  .world-in-App--header .mnv-ec-share-icons a {
     margin: 5px 0 0 12px;
   }
 }
 
 @media (max-width: 640px) {
-  .WorldInApp--header .mnv-ec-share-icons a,
-  .WorldInApp--header .mnv-ec-share-icons svg {
+  .world-in-App--header .mnv-ec-share-icons a,
+  .world-in-App--header .mnv-ec-share-icons svg {
     width: 30px;
     height: 30px;
   }
-  .WorldInApp--header .mnv-ec-share-icons a {
+  .world-in-App--header .mnv-ec-share-icons a {
     margin: 8px 0 0 6px !important;
   }
-  .WorldInApp--header .fxOn {
+  .world-in-App--header .fxOn {
     width: 290px;
   }
 }
 
  @media (max-width: 540px) {
-  .WorldInApp {
+  .world-in-App {
     margin: 46px auto 0;
   }
 
-  .WorldInApp--header-logo-title {
+  .world-in-App--header-logo-title {
     font-size:  16px;
     line-height: 36px;
   }
 
-  .WorldInApp .Masthead {
+  .world-in-App .Masthead {
     height: 46px;
   }
 
-  .WorldInApp .Masthead .Masthead--logo {
+  .world-in-App .Masthead .Masthead--logo {
     width: 46px;
   }
 
-  .WorldInApp .Masthead .Masthead--logo .Icon-economist-small {
+  .world-in-App .Masthead .Masthead--logo .Icon-economist-small {
     height: 16px !important;
     width: 16px !important;
   }
 
-  .WorldInApp .Masthead .user-more-menu > ul > li {
+  .world-in-App .Masthead .user-more-menu > ul > li {
     width: 46px;
   }
 
-  .WorldInApp .Masthead .user-more-menu .Icon-hamburger {
+  .world-in-App .Masthead .user-more-menu .Icon-hamburger {
     height: 40px;
     width: 40px;
   }
 
-  .WorldInApp .Masthead .user-more-menu .subscription-menu {
+  .world-in-App .Masthead .user-more-menu .subscription-menu {
     padding: 0 5px;
     width: 80px;
   }
 
-  .WorldInApp .Masthead .user-more-menu .subscription-menu a{
+  .world-in-App .Masthead .user-more-menu .subscription-menu a{
     line-height: 46px;
     font-size: 13px !important;
     top: -2px;
     left: 8px;
   }
 
-  .WorldInApp .Icon-worldif {
+  .world-in-App .Icon-worldif {
     height: 46px;
     width: 46px;
   }
 
-  .WorldInApp .Icon-home{
+  .world-in-App .Icon-home{
     width: 46px;
     height: 46px;
   }
 
-  .WorldInApp--header .mnv-ec-share-icons-container {
+  .world-in-App--header .mnv-ec-share-icons-container {
     height: 46px;
     width: 200px;
     left: 10px;
   }
 
-  .WorldInApp--header .controls {
+  .world-in-App--header .controls {
     height: 46px;
     width: 46px;
     right: 46px;
   }
 
-  .WorldInApp--header .Icon-share,
-  .WorldInApp--header .Icon-close {
+  .world-in-App--header .Icon-share,
+  .world-in-App--header .Icon-close {
     height: 46px;
     width: 46px;
   }
 
-  .WorldInApp--header .mnv-ec-share-icons .Icon {
+  .world-in-App--header .mnv-ec-share-icons .Icon {
     padding: 0 !important;
   }
 
-  .WorldInApp .user-more-menu .submenu {
+  .world-in-App .user-more-menu .submenu {
     left: -47px;
   }
 
-  .WorldInApp--header .mnv-ec-share-icons a {
+  .world-in-App--header .mnv-ec-share-icons a {
     margin: 8px 0 0 6px !important;
   }
 
-  .WorldInApp--header .mnv-ec-share-icons a,
-  .WorldInApp--header .mnv-ec-share-icons svg {
+  .world-in-App--header .mnv-ec-share-icons a,
+  .world-in-App--header .mnv-ec-share-icons svg {
     width: 30px;
     height: 30px;
   }
 
-  .WorldInApp--header .mnv-ec-share-icons-container-inner {
+  .world-in-App--header .mnv-ec-share-icons-container-inner {
     left: 0;
   }
 
-  .WorldInApp--header .mnv-ec-share.mobile a.mail {
+  .world-in-App--header .mnv-ec-share.mobile a.mail {
     display: none !important;
   }
 }
 
  @media (max-width: 480px) {
-   .WorldInApp--header .fxOn {
+   .world-in-App--header .fxOn {
     width: 310px;
   }
 }
 
 @media (max-width: 400px) {
-  .WorldInApp--header-logo-title {
+  .world-in-App--header-logo-title {
     font-size:  13px;
   }
 }
 
 @media (max-width: 318px) {
-  .WorldInApp--header-logo-title {
+  .world-in-App--header-logo-title {
     display: none;
   }
 }
 
- .WorldInApp--header-sharebar {
+ .world-in-App--header-sharebar {
   display: none !important;
 }
 
-.StickyMasthead.sticky .WorldInApp--header-sharebar {
+.StickyMasthead.sticky .world-in-App--header-sharebar {
   display: inline-block !important;
   overflow: hidden;
 }

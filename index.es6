@@ -1,46 +1,24 @@
-import React, { PropTypes, Component } from 'react';
-import CaptureClicks from 'react-router-component/lib/CaptureClicks';
-import RouteHandler from './routing';
+import React from 'react';
 
-import DefaultAppHeader from './header';
-import {
-  AppContainer as DefaultAppContainer,
-  AppContentContainer as DefaultAppContentContainer,
-} from './containers';
+import { Locations, Location, NotFound } from 'react-router-component';
+import scrollToTop from './scroll-to-top';
 
-export default class App extends Component {
+import WorldInApp from './app';
+import NotFoundHandler from '@economist/component-404';
+import HomePageHandler from './homepage';
+import ArticlePageHandler from './articlepage';
 
-  static propTypes = {
-    path: PropTypes.string.isRequired,
-    components: PropTypes.shape({
-      AppContainer: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]).isRequired,
-      AppHeader: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]),
-      AppContent: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]).isRequired,
-      AppFooter: PropTypes.oneOf([ PropTypes.string, PropTypes.func ]),
-    }),
-  }
-
-  static defaultProps = {
-    components: {
-      AppContainer: DefaultAppContainer,
-      AppHeader: DefaultAppHeader,
-      AppContent: DefaultAppContentContainer,
-    },
-  }
-
-  render() {
-    const path = this.props.path || '/';
-    const { AppContainer, AppHeader, AppContent, AppFooter } = this.props.components;
-    return (
-      <AppContainer>
-        <CaptureClicks>
-          <AppHeader />
-          <AppContent>
-            <RouteHandler path={path} />
-          </AppContent>
-          <AppFooter />
-        </CaptureClicks>
-      </AppContainer>
-    );
-  }
-}
+export default ({ path, ...remainingProps }) => (
+  <WorldInApp
+    path={path}
+    title="World In"
+    {...remainingProps}
+  >
+    <Locations ref="router" path={path} onNavigation={scrollToTop}>
+      <Location path="/" handler={HomePageHandler} />
+      <Location path="/article/:id" handler={ArticlePageHandler} />
+      <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
+      <NotFound handler={NotFoundHandler}/>
+    </Locations>
+  </WorldInApp>
+);
