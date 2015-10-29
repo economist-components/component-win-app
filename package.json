@@ -134,7 +134,7 @@
     "@economist/component-articletemplate": "^6.3.1",
     "@economist/component-font-neutra2": "^1.0.4",
     "@economist/component-icon": "^3.0.4",
-    "react": "^0.13.3",
+    "react": "^0.14.1",
     "react-router-component": "^0.27.2"
   },
   "devDependencies": {
@@ -164,7 +164,7 @@
     "npm-watch": "0.0.1",
     "parallelshell": "^2.0.0",
     "pre-commit": "^1.0.10",
-    "react-dom": "^0.14.0",
+    "react-dom": "^0.14.1",
     "watchify": "^3.4.0"
   },
   "pre-commit": [
