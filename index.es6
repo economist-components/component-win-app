@@ -1,51 +1,34 @@
-import React from 'react';
+import React, { PropTypes, Component } from 'react';
 
 import { Locations, Location, NotFound } from 'react-router-component';
-import FourOhFourPage from '@economist/component-404';
+import scrollToTop from './scroll-to-top';
 
-export default class WorldInApp extends React.Component {
+import App from './app';
+import NotFoundHandler from '@economist/component-404';
+import HomePageHandler from './homepage';
+import ArticlePageHandler from './articlepage';
 
-  static get propTypes() {
-    return {
-      path: React.PropTypes.string.isRequired,
-      onClose: React.PropTypes.func,
-      onOpen: React.PropTypes.func,
-    };
-  }
+export default class WorldInApp extends Component {
 
-  constructor() {
-    super();
-    this.state = { open: false };
-  }
-
-  scrollToTop() {
-    if (typeof window !== 'undefined' && window.document) {
-      window.scrollTo(0, 0);
-    }
+  static propTypes = {
+    path: PropTypes.string.isRequired,
   }
 
   render() {
+    const { path, ...remainingProps } = this.props;
     return (
-      <div className="WorldInApp">
-        <div className="WorldInApp--header">
-          <a href="/" className="WorldInApp--header-logo StickyMasthead--hidden">
-            <h1 className="WorldInApp--header-logo-title">The World</h1>
-          </a>
-          <div className="WorldInApp--header-sharebar StickyMasthead--visible touch">
-            <div className="WorldInApp--header-sharebar-container"></div>
-          </div>
-        </div>
-        <div>
-          <div className="WorldInApp--content" role="main">
-            <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
-              <Location path="/" handler={<div>Hello world.</div>} />
-              <Location path="/article/:id" handler={<div>An article goes here.</div>} />
-              <Location path="/article/:id/:slug" handler={<div>An article goes here.</div>} />
-              <NotFound handler={FourOhFourPage}/>
-            </Locations>
-          </div>
-        </div>
-      </div>
+      <App
+        path={path}
+        title="World In"
+        {...remainingProps}
+      >
+        <Locations ref="router" path={path} onNavigation={scrollToTop}>
+          <Location path="/" handler={HomePageHandler} />
+          <Location path="/article/:id" handler={ArticlePageHandler} />
+          <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
+          <NotFound handler={NotFoundHandler}/>
+        </Locations>
+      </App>
     );
   }
 }
