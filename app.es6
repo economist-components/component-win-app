@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import { isComponent, isChildren } from './proptypes';
+import { isComponent } from './proptypes';
 
 import DefaultAppHeader from './header';
 import {
@@ -11,7 +11,7 @@ export default class AppTemplate extends Component {
 
   static propTypes = {
     path: PropTypes.string.isRequired,
-    children: isChildren,
+    children: PropTypes.node,
     components: PropTypes.shape({
       AppContainer: isComponent.isRequired,
       AppHeader: isComponent,
@@ -31,15 +31,28 @@ export default class AppTemplate extends Component {
   }
 
   render() {
-    const { children: content, ...remainingProps } = this.props;
+    const { children: content = '', ...remainingProps } = this.props;
     const { AppContainer, AppHeader, AppContentContainer, AppFooter } = this.props.components;
+
+    /* eslint-disable init-declarations */
+    let headerEl;
+    if (AppHeader) {
+      headerEl = <AppHeader {...remainingProps} />;
+    }
+
+    let footerEl;
+    if (AppFooter) {
+      footerEl = <AppFooter />;
+    }
+    /* eslint-enable init-declarations */
+
     return (
       <AppContainer>
-        {AppHeader ? <AppHeader {...remainingProps} /> : ''}
+        {headerEl}
         <AppContentContainer>
           {content}
         </AppContentContainer>
-        {AppFooter ? <AppFooter /> : ''}
+        {footerEl}
       </AppContainer>
     );
   }

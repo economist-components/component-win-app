@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import CaptureClicks from 'react-router-component/lib/CaptureClicks';
-import { isChildren } from './proptypes';
 
 const AppContainer = ({ children }) => (
   <div className="world-in-App">
@@ -10,7 +9,7 @@ const AppContainer = ({ children }) => (
   </div>
 );
 AppContainer.propTypes = {
-  children: isChildren,
+  children: PropTypes.node,
 };
 
 const AppContentContainer = ({ children }) => (
@@ -19,7 +18,7 @@ const AppContentContainer = ({ children }) => (
   </div>
 );
 AppContentContainer.propTypes = {
-  children: isChildren,
+  children: PropTypes.node,
 };
 
 export { AppContainer, AppContentContainer };
