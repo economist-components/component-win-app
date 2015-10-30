@@ -1,6 +1,4 @@
 @import '@economist/component-font-neutra2';
-@import '@economist/component-icon';
-@import '@economist/component-articletemplate';
 @import '@economist/component-404';
 
 .world-in-App {
@@ -10,8 +8,7 @@
   width: 100%;
 }
 
-.world-in-App .Masthead,
-.world-in-App--header {
+.world-in-header {
   max-width: 1190px;
   width: 100%;
   position: fixed;
@@ -22,20 +19,12 @@
   z-index: 9999999999;
 }
 
-.world-in-App--header.sticky {
-  margin-top: 0;
-}
-
-.world-in-App .Masthead--container > * {
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-}
-
-.world-in-App .Masthead--container {
+.world-in-header__logo {
+  float: right;
   height: 100%;
 }
 
-.world-in-App--header-logo-title {
+.world-in-header__logo-title {
   font-family: Neutra2Display-Titling;
   display: inline-block;
   font-size: 37px;
@@ -47,103 +36,44 @@
   line-height: 62px;
 }
 
-.world-in-App .Masthead {
-  height: 67px;
-}
-
-.world-in-App .Masthead--logo {
-  width: 80px;
-  height: 100%;
-  border-right: 1px solid #929ca2;
-  position: relative;
-}
-
-.world-in-App .Masthead--logo:hover {
-  background: black;
-  cursor: pointer;
-}
-
-.world-in-App .Masthead .Masthead--logo .Icon-economist-small {
-  height: 26px !important;
-  width: 26px !important;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-}
-
-.world-in-App .Icon-home {
-  width: 67px;
-  height: 67px;
-  background-color: #38A8E0 !important;
-}
-
-.world-in-App .world-in-App--header-logo {
-  float: right;
-  height: 100%;
-}
-
 @media (max-width: 1190px) {
-  .world-in-App .Masthead,
-  .world-in-App--header {
+  .world-in-App__header {
     left: 0 !important;
   }
 }
 
 @media (max-width: 680px) {
-  .world-in-App {
+  .world-in-app {
     margin: 50px auto 0;
   }
 
-  .world-in-App--header-logo-title {
+  .world-in-header__logo-title {
     font-size: 28px;
     line-height: 44px;
-  }
-
-  .world-in-App .Masthead {
-    height: 50px;
-  }
-
-  .world-in-App .Masthead .Masthead--logo {
-    width: 50px;
   }
 
 }
 
 @media (max-width: 540px) {
-  .world-in-App {
+  .world-in-app {
     margin: 46px auto 0;
   }
 
-  .world-in-App--header-logo-title {
+  .world-in-header__logo-title {
     font-size:  16px;
     line-height: 36px;
-  }
-
-  .world-in-App .Masthead {
-    height: 46px;
-  }
-
-  .world-in-App .Masthead .Masthead--logo {
-    width: 46px;
-  }
-
-  .world-in-App .Masthead .Masthead--logo .Icon-economist-small {
-    height: 16px !important;
-    width: 16px !important;
   }
 }
 
 
 @media (max-width: 400px) {
-  .world-in-App--header-logo-title {
+  .world-in-header__logo-title {
     font-size:  13px;
   }
 }
 
 @media (max-width: 318px) {
-  .world-in-App--header-logo-title {
+  .world-in-header__logo-title {
     display: none;
   }
 }

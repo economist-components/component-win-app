@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import CaptureClicks from 'react-router-component/lib/CaptureClicks';
 
 const AppContainer = ({ children }) => (
-  <div className="world-in-App">
+  <div className="world-in-app">
     <CaptureClicks>
       {children}
     </CaptureClicks>
@@ -13,7 +13,7 @@ AppContainer.propTypes = {
 };
 
 const AppContentContainer = ({ children }) => (
-  <div className="world-in-App--content" role="main">
+  <div className="world-in-content" role="main">
     {children}
   </div>
 );
