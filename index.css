@@ -1,7 +1,7 @@
 @import '@economist/component-font-neutra2';
 @import '@economist/component-404';
 
-.world-in-App {
+.world-in-app {
   max-width: 1190px;
   margin: 67px auto 0;
   position: relative;
@@ -37,7 +37,7 @@
 }
 
 @media (max-width: 1190px) {
-  .world-in-App__header {
+  .world-in-app__header {
     left: 0 !important;
   }
 }
