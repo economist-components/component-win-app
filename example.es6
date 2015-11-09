@@ -3,5 +3,5 @@ import React from 'react';
 import WorldInApp from '.';
 
 export default (
-  <WorldInApp path="/article/10523" />
+  <WorldInApp path="/article/10523/hello-world" />
 );
