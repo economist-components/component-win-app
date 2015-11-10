@@ -20,15 +20,23 @@ const AppHeader = ({ title }) => (
       <div className="world-in-header__navigation">
         <div className="world-in-header__navigation-inner-wrapper">
           <div className="world-in-header__main-bar">
-            <div className="world-in-header__main-bar__economist-logo">
-              <Icon icon="economist-small" size="36px" />
+            <div className="world-in-header__economist-logo">
+              <a className="world-in-header__economist-logo-link"
+                href="http://www.economist.com" title="The Economist website"
+              >
+                <Icon icon="economist-small" size="26px" />
+              </a>
             </div>
             <div className="world-in-header__main-bar__spacer">
             </div>
-            <div className="world-in-header__main-bar__home">
-              <a href="/" title="Home page"><Icon icon="home" /></a>
+            <div className="world-in-header__home-icon">
+              <a href="/"
+                title="Home page" className="world-in-header__home-logo-link"
+              >
+                <Icon icon="home" />
+              </a>
             </div>
-            <div className="world-in-header__main-bar__hamburger-placeholder">
+            <div className="world-in-header__hamburger-placeholder">
             </div>
           </div>
           <div className="world-in-header__main-navigation">
