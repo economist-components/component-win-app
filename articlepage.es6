@@ -5,10 +5,14 @@ import loadingHandler from './loadingHandler';
 import failureHandler from './failureHandler';
 import fetch from './fetch';
 
+function fetchArticle({ articleId }) {
+  return fetch(`http://some-url/api/article/${articleId}`);
+}
+
 export default (
   <Impart.RootContainer
     Component={ArticlePage}
-    route={({ articleId }) => (fetch(`http://some-url/api/article/${articleId}`))}
+    route={fetchArticle}
     renderLoading={loadingHandler}
     renderFailure={failureHandler}
   />

@@ -10,10 +10,14 @@ class Homepage extends React.Component {
   }
 }
 
+function fetchHomepage() {
+  return fetch('http://some-url/api/data/homepage');
+}
+
 export default (
   <Impart.RootContainer
     Component={Homepage}
-    route={() => (fetch('http://some-url/api/data/homepage'))}
+    route={fetchHomepage}
     renderLoading={loadingHandler}
     renderFailure={failureHandler}
   />
