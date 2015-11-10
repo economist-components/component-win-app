@@ -1,14 +1,9 @@
 import React from 'react';
 import Impart from '@economist/component-react-async-container';
+import Homepage from '@economist/component-win-homepage';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 import fetch from './fetch';
-
-class Homepage extends React.Component {
-  render() {
-    return (<div>Homepage</div>);
-  }
-}
 
 function fetchHomepage() {
   return fetch('http://some-url/api/data/homepage');

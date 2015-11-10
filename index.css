@@ -2,6 +2,7 @@
 @import '@economist/component-font-officina';
 @import '@economist/component-404';
 @import '@economist/component-win-articlepage';
+@import '@economist/component-win-homepage';
 
 .world-in-app {
   max-width: 1190px;
