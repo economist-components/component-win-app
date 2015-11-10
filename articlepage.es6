@@ -1,8 +1,8 @@
 import React from 'react';
 import ArticlePage from '@economist/component-win-articlepage';
 import Impart from '@economist/component-react-async-container';
-import loadingHandler from './loadingHandler';
-import failureHandler from './failureHandler';
+import loadingHandler from './loading-handler';
+import failureHandler from './failure-handler';
 import fetch from './fetch';
 
 function fetchArticle({ articleId }) {

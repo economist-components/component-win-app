@@ -1,7 +1,7 @@
 import React from 'react';
 import Impart from '@economist/component-react-async-container';
-import loadingHandler from './loadingHandler';
-import failureHandler from './failureHandler';
+import loadingHandler from './loading-handler';
+import failureHandler from './failure-handler';
 import fetch from './fetch';
 
 class Homepage extends React.Component {
