@@ -1,5 +1,6 @@
 @import '@economist/component-font-neutra2';
 @import '@economist/component-404';
+@import './header';
 
 .world-in-app {
   max-width: 1190px;
@@ -8,7 +9,7 @@
   width: 100%;
 }
 
-.world-in-header {
+/*.world-in-header {
   max-width: 1190px;
   width: 100%;
   position: fixed;
@@ -17,12 +18,7 @@
   transform: translate3d(0, 0, 0);
   will-change: transform;
   z-index: 9999999999;
-}
-
-.world-in-header__logo {
-  float: right;
-  height: 100%;
-}
+}*/
 
 .world-in-header__logo-title {
   font-family: Neutra2Display-Titling;

@@ -1,0 +1,132 @@
+@import '@economist/component-win-navigation';
+@import '@economist/component-sharebar';
+@import '@economist/component-palette';
+@import '@economist/component-grid';
+
+.world-in-header {
+  display: table-row;
+  background-color: var(--color-economist);
+}
+
+.world-in-header__navigation {
+  width: 100%;
+}
+
+.world-in-header__navigation,
+.world-in-header__logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.world-in-header__logo {
+  padding: var(--grid-gutter-s) var(--grid-gutter-m);
+}
+
+.world-in-header__main-bar {
+  background-color: var(--color-beijing);
+  width: 100%;
+  border-bottom: solid 1px var(--color-thimphu);
+  border-right: solid 1px var(--color-thimphu);
+  box-sizing: border-box;
+}
+
+.world-in-header__main-bar use {
+  fill: var(--color-thimphu);
+}
+
+.world-in-header__main-bar__navigation-inner-wrapper {
+  display: table-row;
+}
+
+.world-in-header__main-bar__economist-logo,
+.world-in-header__main-bar__spacer,
+.world-in-header__main-bar__home,
+.world-in-header__main-bar__share-bar,
+.world-in-header__main-bar__hamburger-placeholder {
+  display: table-cell;
+}
+
+.world-in-header__main-bar__economist-logo,
+.world-in-header__main-bar__home,
+.world-in-header__main-bar__share-bar,
+.world-in-header__main-bar__hamburger-placeholder {
+    width: 60px;
+}
+
+.world-in-header__main-bar__economist-logo {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.world-in-header__main-bar__spacer {
+  width: 100%;
+}
+
+.world-in-header__main-bar__economist-logo {
+  border-right: solid 1px var(--color-thimphu);
+}
+.world-in-header__main-bar__home {
+  border-right: solid 1px var(--color-thimphu);
+  border-left: solid 1px var(--color-thimphu);
+}
+.world-in-header__main-bar__home {
+  vertical-align: middle;
+  padding: 0 3px;
+}
+
+.world-in-header__main-bar__hamburger-placeholder {
+  min-width: 68px;
+  background-color: var(--color-economist);
+}
+
+@custom-media --viewport-medium (width <= 639px);
+@custom-media --viewport-big (width >= 640px);
+
+@media (--viewport-big){
+  .world-in-header__main-bar__home,
+  .world-in-header__main-bar__hamburger-placeholder {
+    display: none;
+  }
+}
+
+@media (--viewport-medium){
+  .world-in-header__logo {
+    display: none;
+  }
+  .world-in-header {
+    display: block;
+    width: 100%;
+  }
+  .world-in-header__navigation {
+    display: table;
+    width: 100%;
+  }
+  .world-in-header__navigation-inner-wrapper {
+    display: table-row;
+  }
+  .world-in-header__main-bar,
+  .world-in-header__main-navigation {
+    display: table-cell;
+  }
+  .world-in-header__main-bar {
+    width: 100%;
+  }
+  .world-in-header__navigation-inner-wrapper {
+    position: relative;
+  }
+  .world-in-header__main-navigation {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+  }
+  .world-in-header__main-bar {
+    border-right: none !important;
+  }
+  .navigation {
+    border-bottom: none;
+  }
+  .navigation__menu-button:hover {
+    background: none;
+  }
+}
