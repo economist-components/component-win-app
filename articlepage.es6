@@ -3,10 +3,10 @@ import ArticlePage from '@economist/component-win-articlepage';
 import Impart from '@economist/component-react-async-container';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
-import fetch from './fetch';
+import fetch from 'isomorphic-fetch';
 
 function fetchArticle({ articleId }) {
-  return fetch(`http://some-url/api/article/${articleId}`);
+  return fetch(`/api/article/${articleId}`).then((response) => (response.json()));
 }
 
 export default (
