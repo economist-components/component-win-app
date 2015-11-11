@@ -135,7 +135,7 @@
     "@economist/component-font-officina": "^1.0.0",
     "@economist/component-icon": "^3.0.4",
     "@economist/component-react-async-container": "^1.0.0",
-    "@economist/component-win-articlepage": "^1.0.0",
+    "@economist/component-win-articlepage": "^1.1.1",
     "@economist/component-win-homepage": "^1.0.0",
     "isomorphic-fetch": "^2.2.0",
     "react": "^0.14.1",
