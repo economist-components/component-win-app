@@ -2,11 +2,17 @@
 @import '@economist/component-sharebar';
 @import '@economist/component-palette';
 @import '@economist/component-grid';
+@import 'sticky';
 
-.world-in-header {
-  display: table-row;
+.world-in-header,
+.world-in-header__inner-wrapper {
   background-color: var(--color-economist);
 }
+
+.world-in-header__inner-wrapper {
+  display: table-row;
+}
+
 
 .world-in-header__navigation {
   width: 100%;
@@ -23,11 +29,11 @@
 }
 
 .world-in-header__main-bar {
-  background-color: var(--color-beijing);
   width: 100%;
   border-bottom: solid 1px var(--color-thimphu);
   border-right: solid 1px var(--color-thimphu);
   box-sizing: border-box;
+  float: left;
 }
 
 .world-in-header__main-bar use {
@@ -68,6 +74,7 @@
   border-right: solid 1px var(--color-thimphu);
   vertical-align: middle;
   min-width: 60px;
+  background-color: var(--color-beijing);
 }
 .world-in-header__home-icon {
   border-right: solid 1px var(--color-thimphu);
@@ -99,6 +106,9 @@
   .world-in-header__home-icon,
   .world-in-header__hamburger-placeholder {
     display: none;
+  }
+  .world-in-header__main-bar {
+    background-color: var(--color-beijing);
   }
 }
 

@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import Navigation from '@economist/component-win-navigation';
 import ShareBar from '@economist/component-sharebar';
 import Icon from '@economist/component-icon';
+import StickyPosition from 'react-sticky-position';
 /* Mockup data  */
 import json from './test/data/large';
 const navigationItems = json;
@@ -17,7 +18,8 @@ const activeArticleId = 55;
 
 export default function AppHeader({ title }) {
   return (
-    <div className="world-in-header">
+    <StickyPosition className="world-in-header world-in-header--sticked">
+      <div className="world-in-header__inner-wrapper">
         <div className="world-in-header__navigation">
           <div className="world-in-header__navigation-inner-wrapper">
             <div className="world-in-header__main-bar">
@@ -55,7 +57,8 @@ export default function AppHeader({ title }) {
         <a href="/" className="world-in-header__logo">
           <img src="./assets/world-in-logo.svg" alt="The World In 2016" width="120px" />
         </a>
-    </div>
+      </div>  
+    </StickyPosition>
   );
 }
 
