@@ -87,6 +87,11 @@
     float: left;
 }
 
+/* TODO: Move navigation fixes in the relative component */
+.navigation {
+  margin: auto;
+}
+
 @custom-media --viewport-medium (width <= 639px);
 @custom-media --viewport-big (width >= 640px);
 
