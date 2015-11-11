@@ -6,7 +6,7 @@ import failureHandler from './failure-handler';
 import fetch from 'isomorphic-fetch';
 
 function fetchArticle({ articleId }) {
-  return fetch(`http://localhost:8080/api/article/${articleId}`).then((response) => (response.json()));
+  return fetch(`/api/article/${articleId}`).then((response) => (response.json()));
 }
 
 export default (
