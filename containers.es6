@@ -1,24 +1,32 @@
 import React, { PropTypes } from 'react';
 import CaptureClicks from 'react-router-component/lib/CaptureClicks';
 
-const AppContainer = ({ children }) => (
-  <div className="world-in-app">
-    <CaptureClicks>
+export function AppContainer({ children }) {
+  return (
+    <div className="world-in-app">
+      <CaptureClicks>
+        {children}
+      </CaptureClicks>
+    </div>
+  );
+}
+
+if (process.env.NODE_ENV !== 'production') {
+  AppContainer.propTypes = {
+    children: PropTypes.node,
+  };
+}
+
+export function AppContentContainer({ children }) {
+  return (
+    <div className="world-in-content" role="main">
       {children}
-    </CaptureClicks>
-  </div>
-);
-AppContainer.propTypes = {
-  children: PropTypes.node,
-};
+    </div>
+  );
+}
 
-const AppContentContainer = ({ children }) => (
-  <div className="world-in-content" role="main">
-    {children}
-  </div>
-);
-AppContentContainer.propTypes = {
-  children: PropTypes.node,
-};
-
-export { AppContainer, AppContentContainer };
+if (process.env.NODE_ENV !== 'production') {
+  AppContentContainer.propTypes = {
+    children: PropTypes.node,
+  };
+}
