@@ -3,10 +3,12 @@ import Impart from '@economist/component-react-async-container';
 import Homepage from '@economist/component-win-homepage';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
-import fetch from './fetch';
+import fetch from 'isomorphic-fetch';
 
 function fetchHomepage() {
-  return fetch('http://some-url/api/data/homepage');
+  return fetch('/api/data/homepage').then((response) => {
+    return response.json();
+  });
 }
 
 export default (
