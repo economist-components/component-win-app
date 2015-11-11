@@ -6,8 +6,8 @@ import failureHandler from './failure-handler';
 import fetch from 'isomorphic-fetch';
 
 function fetchHomepage() {
-  return fetch('/api/data/homepage').then((response) => {
-    return response.json();
+  return fetch('/api/homepage').then((response) => {
+    (response.json());
   });
 }
 

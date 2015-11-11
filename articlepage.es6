@@ -7,7 +7,7 @@ import fetch from 'isomorphic-fetch';
 
 function fetchArticle({ articleId }) {
   return fetch(`http://localhost:8080/api/article/${articleId}`).then((response) => {
-    return response.json();
+    (response.json());
   });
 }
 
