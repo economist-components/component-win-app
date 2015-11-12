@@ -1,5 +1,6 @@
 import React from 'react';
 import DefaultAppHeader from './header';
+import DefaultAppFooter from './footer';
 import {
   AppContainer as DefaultAppContainer,
   AppContentContainer as DefaultAppContentContainer,
@@ -12,6 +13,7 @@ export default function AppTemplate({
     AppContainer: DefaultAppContainer,
     AppHeader: DefaultAppHeader,
     AppContentContainer: DefaultAppContentContainer,
+    AppFooter: DefaultAppFooter,
   },
   ...remainingProps,
 } = {}) {
