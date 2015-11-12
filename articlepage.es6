@@ -4,9 +4,11 @@ import Impart from '@economist/component-react-async-container';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 import fetch from 'isomorphic-fetch';
+import fakeFetch from './fetch';
 
+const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
 function fetchArticle({ articleId }) {
-  return fetch(`/api/article/${articleId}`).then((response) => (response.json()));
+  return fetcher(`/api/article/${articleId}`).then((response) => (response.json()));
 }
 
 export default (
