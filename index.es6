@@ -21,8 +21,8 @@ export default class WorldInApp extends Component {
       >
         <Locations ref="router" path={path} onNavigation={scrollToTop}>
           <Location path="/" handler={HomePageHandler} />
-          <Location path="/article/:articleId" handler={ArticlePageHandler} />
-          <Location path="/article/:articleId/:slug" handler={ArticlePageHandler} />
+          <Location path="/article/:id" handler={ArticlePageHandler} />
+          <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
           <NotFound handler={NotFoundHandler}/>
         </Locations>
       </App>
