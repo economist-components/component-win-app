@@ -15,6 +15,9 @@
     "!karma.conf.js",
     "!testbundle.js"
   ],
+  "assets": [
+    "assets/world-in-logo.svg"
+  ],
   "browserify": {
     "transform": [
       "babelify"

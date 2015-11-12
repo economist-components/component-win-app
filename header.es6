@@ -32,8 +32,10 @@ function AppHeader({ navigationItems }) {
               <div className="world-in-header__main-bar__spacer">
               </div>
               <div className="world-in-header__home-icon">
-                <a href="/"
-                  title="Home page" className="world-in-header__home-logo-link"
+                <a
+                  href="/"
+                  title="Home page"
+                  className="world-in-header__home-logo-link"
                 >
                   <Icon icon="home" />
                 </a>
