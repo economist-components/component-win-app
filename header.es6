@@ -3,22 +3,19 @@ import React, { PropTypes } from 'react';
 import StickyPosition from 'react-sticky-position';
 import Navigation from '@economist/component-win-navigation';
 import Icon from '@economist/component-icon';
-import ShareBar from '@economist/component-sharebar';
-
 import Impart from '@economist/component-react-async-container';
 import fetch from 'isomorphic-fetch';
+import fakeFetch from './fetch';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 
+const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
 function AppHeader({ navigationItems }) {
   const focusCategorySlug = null;
   const focusSubcategorySlug = null;
   const activeCategorySlug = null;
   const activeSubcategorySlug = null;
   const activeArticleId = null;
-  // <div className="world-in-header__main-bar__share-bar">
-  //   <ShareBar layout="horizontal"/>
-  // </div>
   return (
     <StickyPosition className="world-in-header world-in-header--sticked">
       <div className="world-in-header__inner-wrapper">
@@ -72,7 +69,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 export default function AppHeaderWithData() {
   function fetchMenu() {
-    return fetch('/api/menu').then((response) => (response.json()));
+    return fetcher('/api/menu').then((response) => (response.json()));
   }
 
   return (
