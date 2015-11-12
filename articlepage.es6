@@ -6,16 +6,18 @@ import failureHandler from './failure-handler';
 import fetch from 'isomorphic-fetch';
 import fakeFetch from './fetch';
 
-const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
-function fetchArticle({ articleId }) {
-  return fetcher(`/api/article/${articleId}`).then((response) => (response.json()));
-}
+export default function ArticlePageWithData() {
+  const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
+  function fetchArticle({ articleId }) {
+    return fetcher(`/api/article/${articleId}`).then((response) => (response.json()));
+  }
 
-export default (
-  <Impart.RootContainer
-    Component={ArticlePage}
-    route={fetchArticle}
-    renderLoading={loadingHandler}
-    renderFailure={failureHandler}
-  />
-);
+  return (
+    <Impart.RootContainer
+      Component={ArticlePage}
+      route={fetchArticle}
+      renderLoading={loadingHandler}
+      renderFailure={failureHandler}
+    />
+  );
+}

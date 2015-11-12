@@ -6,16 +6,18 @@ import failureHandler from './failure-handler';
 import fetch from 'isomorphic-fetch';
 import fakeFetch from './fetch';
 
-const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
-function fetchHomepage() {
-  return fetcher('/api/homepage').then((response) => (response.json()));
-}
+export default function HomePageWithData() {
+  const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
+  function fetchHomepage() {
+    return fetcher('/api/homepage').then((response) => (response.json()));
+  }
 
-export default (
-  <Impart.RootContainer
-    Component={Homepage}
-    route={fetchHomepage}
-    renderLoading={loadingHandler}
-    renderFailure={failureHandler}
-  />
-);
+  return (
+    <Impart.RootContainer
+      Component={Homepage}
+      route={fetchHomepage}
+      renderLoading={loadingHandler}
+      renderFailure={failureHandler}
+    />
+  );
+}
