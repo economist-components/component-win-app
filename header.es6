@@ -56,7 +56,7 @@ function AppHeader({ navigationItems }) {
           </div>
         </div>
         <a href="/" className="world-in-header__logo">
-          <img src="./assets/world-in-logo.svg" alt="The World In 2016" width="120px" />
+          <img src="/assets/world-in-logo.svg" alt="The World In 2016" width="120px" />
         </a>
       </div>
     </StickyPosition>
