@@ -2,99 +2,95 @@ export default {
   customer: [
     {
       title: 'Subscribe',
-      href: 'http://www.economistgroupmedia.com',
+      href: 'https://subscriptions.economist.com',
     },
     {
       title: 'Contact us',
-      href: 'http://www.economist.com/rights/',
+      href: 'http://www.economist.com/contact-info',
     },
     {
       title: 'Help',
-      href: 'http://www.economist.com/rights/',
+      href: 'http://www.economist.com/help/home',
     },
   ],
   economist: [
     {
       title: 'Advertise',
-      href: 'products/subscribe',
+      href: 'http://marketingsolutions.economist.com',
     },
     {
       title: 'Editorial Staff',
-      href: 'node/21013093',
+      href: 'http://www.economist.com/mediadirectory',
     },
     {
       title: 'Reprints',
-      href: 'node/21017280',
-    },
-    {
-      title: 'Site Map',
-      href: 'node/21554326',
+      href: 'http://www.economist.com/printedition',
     },
     {
       title: 'Careers',
-      href: 'node/21013080',
+      href: 'http://economistgroupcareers.com',
     },
   ],
   social: [
     {
       title: 'Facebook',
       meta: 'facebook',
-      href: 'https://www.economist.com',
+      href: 'https://www.facebook.com/TheEconomist',
       internal: false,
     },
     {
       title: 'Twitter',
       meta: 'twitter',
-      href: 'https://www.economist.com',
+      href: 'https://twitter.com/TheEconomist',
       internal: false,
     },
     {
       title: 'Linkedin',
       meta: 'linkedin',
-      href: 'https://www.economist.com',
+      href: 'https://www.linkedin.com/grp/home?gid=3056216',
       internal: false,
     },
     {
       title: 'Google',
       meta: 'googleplus',
-      href: 'https://www.economist.com',
+      href: 'https://plus.google.com/100470681032489535736/posts',
       internal: false,
     },
     {
       title: 'Tumblr',
       meta: 'tumblr',
-      href: 'https://www.economist.com',
+      href: 'http://theeconomist.tumblr.com',
       internal: false,
     },
     {
       title: 'Instagram',
       meta: 'instagram',
-      href: 'https://www.economist.com',
+      href: 'http://instagram.com/theeconomist',
       internal: false,
     },
     {
       title: 'mail',
       meta: 'mail',
-      href: 'https://www.economist.com',
+      href: 'http://www.economist.com/newsletters',
       internal: true,
     },
   ],
   business: [
     {
       title: 'Terms of Use',
-      href: 'node/21013093',
+      href: 'http://www.economist.com/legal/terms-of-use',
     },
     {
       title: 'Privacy',
-      href: 'node/21554326',
+      href: 'http://www.economistgroup.com/results_and_governance/governance/privacy',
     },
     {
       title: 'Cookies',
-      href: 'http://www.economistgroup.com/results_and_governance/governance/privacy',
+      href: 'http://www.economist.com/cookies-info',
     },
     {
       title: 'Accessibility',
-      href: 'http://www.economistgroup.com/results_and_governance/governance/privacy',
+      href: 'http://www.economist.com/help/accessibilitypolicy',
     },
   ],
 };
