@@ -4,16 +4,27 @@ import Homepage from '@economist/component-win-homepage';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 import fetch from 'isomorphic-fetch';
+import fakeFetch from './fetch';
+import pageTracker from '@economist/react-i13n-omniture/pagetracker';
 
+const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
 function fetchHomepage() {
-  return fetch('/api/homepage').then((response) => (response.json()));
+  return fetcher('/api/homepage').then((response) => (response.json()));
 }
 
-export default (
-  <Impart.RootContainer
-    Component={Homepage}
-    route={fetchHomepage}
-    renderLoading={loadingHandler}
-    renderFailure={failureHandler}
-  />
-);
+const TrackedHomePage = pageTracker(Homepage, {
+  template: 'home',
+  topic: 'home',
+  title: 'The World In 2016',
+});
+export default function HomePageWithData(props) {
+  return (
+    <Impart.RootContainer
+      {...props}
+      Component={TrackedHomePage}
+      route={fetchHomepage}
+      renderLoading={loadingHandler}
+      renderFailure={failureHandler}
+    />
+  );
+}

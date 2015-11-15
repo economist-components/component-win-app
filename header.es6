@@ -1,22 +1,21 @@
 import React, { PropTypes } from 'react';
-import Navigation from '@economist/component-win-navigation';
-import ShareBar from '@economist/component-sharebar';
-import Icon from '@economist/component-icon';
-import StickyPosition from 'react-sticky-position';
-/* Mockup data  */
-import json from './test/data/large';
-const navigationItems = json;
-const focusCategorySlug = null;
-const focusSubcategorySlug = null;
-const activeCategorySlug = 'world';
-const activeSubcategorySlug = 'africa';
-const activeArticleId = 55;
-/* End Mockup data  */
-// <div className="world-in-header__main-bar__share-bar">
-//   <ShareBar layout="horizontal"/>
-// </div>
 
-export default function AppHeader({ title }) {
+import StickyPosition from 'react-sticky-position';
+import Navigation from '@economist/component-win-navigation';
+import Icon from '@economist/component-icon';
+import Impart from '@economist/component-react-async-container';
+import fetch from 'isomorphic-fetch';
+import fakeFetch from './fetch';
+import loadingHandler from './loading-handler';
+import failureHandler from './failure-handler';
+
+const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
+function AppHeader({ navigationItems }) {
+  const focusCategorySlug = null;
+  const focusSubcategorySlug = null;
+  const activeCategorySlug = null;
+  const activeSubcategorySlug = null;
+  const activeArticleId = null;
   return (
     <StickyPosition className="world-in-header world-in-header--sticked">
       <div className="world-in-header__inner-wrapper">
@@ -33,8 +32,10 @@ export default function AppHeader({ title }) {
               <div className="world-in-header__main-bar__spacer">
               </div>
               <div className="world-in-header__home-icon">
-                <a href="/"
-                  title="Home page" className="world-in-header__home-logo-link"
+                <a
+                  href="/"
+                  title="Home page"
+                  className="world-in-header__home-logo-link"
                 >
                   <Icon icon="home" />
                 </a>
@@ -55,9 +56,9 @@ export default function AppHeader({ title }) {
           </div>
         </div>
         <a href="/" className="world-in-header__logo">
-          <img src="./assets/world-in-logo.svg" alt="The World In 2016" width="120px" />
+          <img src="/assets/world-in-logo.svg" alt="The World In 2016" width="120px" />
         </a>
-      </div>  
+      </div>
     </StickyPosition>
   );
 }
@@ -66,4 +67,19 @@ if (process.env.NODE_ENV !== 'production') {
   AppHeader.propTypes = {
     title: PropTypes.string,
   };
+}
+
+export default function AppHeaderWithData() {
+  function fetchMenu() {
+    return fetcher('/api/menu').then((response) => (response.json()));
+  }
+
+  return (
+    <Impart.RootContainer
+      Component={AppHeader}
+      route={fetchMenu}
+      renderLoading={loadingHandler}
+      renderFailure={failureHandler}
+    />
+  );
 }
