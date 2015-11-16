@@ -140,7 +140,7 @@
     "@economist/component-grid": "^1.3.0",
     "@economist/component-icon": "^3.0.4",
     "@economist/component-palette": "^1.3.0",
-    "@economist/component-react-async-container": "^1.0.0",
+    "@economist/component-react-async-container": "^1.1.0",
     "@economist/component-win-articlepage": "^1.2.2",
     "@economist/component-win-homepage": "^1.0.1",
     "@economist/component-win-navigation": "^1.0.2",

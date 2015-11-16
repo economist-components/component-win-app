@@ -3,30 +3,54 @@ function delay(milliseconds) {
   return new Promise((resolve) => (setTimeout(resolve, milliseconds)));
 }
 
+const articles = {
+  1: {
+    slug: 'hello-world',
+    title: 'hello world',
+    flytitle: 'hello world flytitle',
+    byline: 'hello world byline',
+    bylineLocation: 'hello world byline location',
+    publishDate: '2015-09-29T16:45:56.698Z',
+    rubric: 'hello world rubric',
+    content: [
+      'this is paragraph 1',
+      'this is paragraph 2',
+      'this is paragraph 3',
+    ],
+    sectionName: 'politics',
+    mainImage: {
+      src: {
+        '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
+      },
+      alt: 'hello world image',
+    },
+  },
+  2: {
+    slug: 'hello-world-2',
+    title: 'hello world 2',
+    flytitle: 'hello world 2 flytitle',
+    byline: 'hello world 2 byline',
+    bylineLocation: 'hello world 2 byline location',
+    publishDate: '2015-09-29T16:45:56.698Z',
+    rubric: 'hello world 2 rubric',
+    content: [
+      'this is paragraph 1',
+      'this is paragraph 2',
+      'this is paragraph 3',
+    ],
+    sectionName: 'politics',
+    mainImage: {
+      src: {
+        '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
+      },
+      alt: 'hello world 2 image',
+    },
+  },
+};
 export default (url) => {
   if (/article/.test(url)) {
     return delay(timeout).then(() => ({
-      json: () => ({
-        slug: 'hello-world',
-        title: 'hello world',
-        flytitle: 'hello world flytitle',
-        byline: 'hello world byline',
-        bylineLocation: 'hello world byline location',
-        publishDate: '2015-09-29T16:45:56.698Z',
-        rubric: 'hello world rubric',
-        content: [
-          'this is paragraph 1',
-          'this is paragraph 2',
-          'this is paragraph 3',
-        ],
-        sectionName: 'politics',
-        mainImage: {
-          src: {
-            '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-          },
-          alt: 'hello world image',
-        },
-      }),
+      json: () => (articles[Math.floor(Math.random() * 2) + 1]),
     }));
   } else if (/homepage/.test(url)) {
     return delay(timeout).then(() => ({
