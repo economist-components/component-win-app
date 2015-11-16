@@ -19,9 +19,7 @@ const articles = {
     ],
     sectionName: 'politics',
     mainImage: {
-      src: {
-        '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-      },
+      src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
       alt: 'hello world image',
     },
   },
@@ -40,9 +38,7 @@ const articles = {
     ],
     sectionName: 'politics',
     mainImage: {
-      src: {
-        '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-      },
+      src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
       alt: 'hello world 2 image',
     },
   },
@@ -71,9 +67,7 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: {
-                '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              },
+              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
               alt: 'hello world image',
             },
           },
@@ -92,9 +86,7 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: {
-                '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              },
+              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
               alt: 'hello world image',
             },
           },
@@ -113,9 +105,7 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: {
-                '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              },
+              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
               alt: 'hello world image',
             },
           },
@@ -134,9 +124,7 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: {
-                '1.0x': 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              },
+              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
               alt: 'hello world image',
             },
           },
