@@ -6,7 +6,9 @@ import NotFoundHandler from '@economist/component-404';
 import HomePageHandler from './homepage';
 import ArticlePageHandler from './articlepage';
 
+/* eslint-disable id-match */
 export default class WorldInApp extends Component {
+
   static propTypes = {
     path: PropTypes.string.isRequired,
   }
