@@ -141,15 +141,17 @@
     "@economist/component-icon": "^3.0.4",
     "@economist/component-palette": "^1.3.0",
     "@economist/component-react-async-container": "^1.0.0",
-    "@economist/react-i13n-omniture": "^1.0.0",
     "@economist/component-win-articlepage": "^1.2.1",
     "@economist/component-win-homepage": "^1.0.1",
     "@economist/component-win-navigation": "^1.0.2",
+    "@economist/react-i13n-omniture": "^1.0.1",
     "isomorphic-fetch": "^2.2.0",
     "node-fetch": "^1.3.3",
     "react": "^0.14.1",
     "react-router-component": "^0.27.2",
-    "react-sticky-position": "the-economist-editorial/react-sticky-position"
+    "react-sticky-position": "the-economist-editorial/react-sticky-position",
+    "@economist/user": "^1.0.0",
+    "slug": "^0.9.1"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.4.3",
