@@ -4,4 +4,4 @@ node_modules/
 bundle.css
 *.html
 bundle.*
-
+assets/
