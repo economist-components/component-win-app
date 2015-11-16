@@ -59,7 +59,8 @@ const OmnitureConfig = {
   },
   // Set the URL of the Omniture script you want to use.
   // TODO: Improve this part
-  externalScript: process.env.NODE_ENV === 'production' ? '//www.theworldin.com/assets/omniture_h254.min.js' : '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
+  //externalScript: process.env.NODE_ENV === 'production' ? '//www.theworldin.com/assets/omniture_h254.min.js' : '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
+  externalScript: '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
   eventHandlers: {
     click: (nodeProps) => {
       // Just a fake manipulation
