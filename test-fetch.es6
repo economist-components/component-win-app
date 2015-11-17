@@ -21,8 +21,13 @@ export default (url) => {
         ],
         sectionName: 'politics',
         mainImage: {
-          src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-          alt: 'hello world image',
+          sources: [
+            { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+            { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+            { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+            { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+          ],
+          alt: 'this is the image description',
         },
       },
       2: {
@@ -40,8 +45,13 @@ export default (url) => {
         ],
         sectionName: 'politics',
         mainImage: {
-          src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-          alt: 'hello world 2 image',
+          sources: [
+            { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+            { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+            { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+            { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+          ],
+          alt: 'this is the image description',
         },
       },
     };
@@ -67,8 +77,13 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              alt: 'hello world image',
+              sources: [
+                { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+                { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+                { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+                { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+              ],
+              alt: 'this is the image description',
             },
           },
           {
@@ -86,8 +101,13 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              alt: 'hello world image',
+              sources: [
+                { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+                { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+                { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+                { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+              ],
+              alt: 'this is the image description',
             },
           },
           {
@@ -105,8 +125,13 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              alt: 'hello world image',
+              sources: [
+                { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+                { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+                { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+                { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+              ],
+              alt: 'this is the image description',
             },
           },
           {
@@ -124,8 +149,13 @@ export default (url) => {
             ],
             sectionName: 'politics',
             image: {
-              src: 'http://worldif.economist.com/assets/8a9ec1b43f9e@2x.jpg',
-              alt: 'hello world image',
+              sources: [
+                { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+                { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+                { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+                { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+              ],
+              alt: 'this is the image description',
             },
           },
         ],
