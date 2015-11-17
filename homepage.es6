@@ -13,9 +13,9 @@ function fetchHomepage() {
 }
 
 const TrackedHomePage = pageTracker(Homepage, {
-  template: 'home',
-  topic: 'home',
-  title: 'The World In 2016',
+  template: 'channel',
+  topic: '',
+  title: '',
 });
 export default function HomePageWithData(props) {
   return (
