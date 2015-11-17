@@ -80,7 +80,6 @@ const OmnitureConfig = {
       // Not for home page.
       // Is prop 13 can be populated it would be helpful to overall tracking.
       // this is the cookie reading to identify who users on the site are.
-
       // Override default values
       let articleSource = {};
       if (nodeProps.articleSource) {
@@ -99,20 +98,23 @@ const OmnitureConfig = {
         template: '',
         ...nodeProps,
       };
-      let pageName = [
-        slug(nodeProps.product),
-        slug(nodeProps.template),
-        slug((nodeProps.topic === '') ? nodeProps.product : nodeProps.topic),
-        slug(nodeProps.title) ].join('|');
-      if (nodeProps.template === 'home') {
+      let pageName = '';
+      if (nodeProps.template === 'channel') {
         pageName = `${slug(nodeProps.product)}|home`;
+      } else {
+        pageName = [
+          slug(nodeProps.product),
+          slug(nodeProps.template),
+          slug((nodeProps.topic === '') ? nodeProps.product : nodeProps.topic),
+          slug(nodeProps.title) ].join('|');
       }
+
       return {
         channel: slug(nodeProps.product),
         pageName,
         pageURL: location.href,
         contextData: {
-          subsection: slug(nodeProps.topic),
+          subsection: (nodeProps.topic) ? slug(nodeProps.topic) : '',
         },
         prop1: slug(nodeProps.product),
         prop4: slug(nodeProps.template),
