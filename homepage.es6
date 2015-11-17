@@ -14,8 +14,6 @@ function fetchHomepage() {
 
 const TrackedHomePage = pageTracker(Homepage, {
   template: 'channel',
-  topic: '',
-  title: '',
 });
 export default function HomePageWithData(props) {
   return (
