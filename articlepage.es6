@@ -9,10 +9,10 @@ import fetch from './fetch';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 
-function fetchArticle({ id }) { // eslint-disable-line id-length
+function fetchArticle({ id }) {
   return fetch(`/api/article/${id}`).then((response) => (response.json()));
 }
-function cacheArticle({ id }) { // eslint-disable-line id-length
+function cacheArticle({ id }) {
   return cache(`/api/article/${id}`);
 }
 
