@@ -3,13 +3,13 @@ import React, { PropTypes } from 'react';
 import StickyPosition from 'react-sticky-position';
 import Navigation from '@economist/component-win-navigation';
 import Icon from '@economist/component-icon';
+
 import Impart from '@economist/component-react-async-container';
-import fetch from 'isomorphic-fetch';
-import fakeFetch from './fetch';
+import cache from '@economist/component-react-async-container/cache';
+import fetch from './fetch';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 
-const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
 function AppHeader({ navigationItems }) {
   const focusCategorySlug = null;
   const focusSubcategorySlug = null;
@@ -69,14 +69,18 @@ if (process.env.NODE_ENV !== 'production') {
   };
 }
 
-export default function AppHeaderWithData() {
-  function fetchMenu() {
-    return fetcher('/api/menu').then((response) => (response.json()));
-  }
+function fetchMenu() {
+  return fetch('/api/menu').then((response) => (response.json()));
+}
+function cacheMenu() {
+  return cache('/api/menu');
+}
 
+export default function AppHeaderWithData() {
   return (
     <Impart.RootContainer
       Component={AppHeader}
+      cache={cacheMenu}
       route={fetchMenu}
       renderLoading={loadingHandler}
       renderFailure={failureHandler}
