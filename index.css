@@ -3,6 +3,7 @@
 @import '@economist/component-404';
 @import './header';
 @import './footer';
+@import './cookie';
 @import '@economist/component-win-articlepage';
 @import '@economist/component-win-homepage';
 
