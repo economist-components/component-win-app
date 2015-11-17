@@ -1,4 +1,4 @@
-/* eslint-disable id-match, id-length */
+/* eslint-disable id-match, id-length, arrow-body-style */
 import slug from 'slug';
 
 slug.defaults.mode = 'pretty';
@@ -58,9 +58,10 @@ const OmnitureConfig = {
     eVar42: 'dewi',
   },
   // Set the URL of the Omniture script you want to use.
-  //externalScript: process.env.NODE_ENV === 'production'
-  // ? '//www.theworldin.com/assets/omniture_h254.min.js' : '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
-  //externalScript: `//${document.location.hostname}:${document.location.port}/assets/omniture_h254.min.js`,
+  // externalScript: process.env.NODE_ENV === 'production'
+  // ? '//www.theworldin.com/assets/omniture_h254.min.js' :
+  // '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
+  // externalScript: `//${document.location.hostname}:${document.location.port}/assets/omniture_h254.min.js`,
   externalScript: '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
   eventHandlers: {
     click: (nodeProps) => {
