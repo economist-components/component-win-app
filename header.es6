@@ -6,8 +6,7 @@ import Icon from '@economist/component-icon';
 
 import Impart from '@economist/component-react-async-container';
 import cache from '@economist/component-react-async-container/cache';
-import fetch from 'isomorphic-fetch';
-import fakeFetch from './fetch';
+import fetch from './fetch';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 
@@ -71,8 +70,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 function fetchMenu() {
-  const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
-  return fetcher('/api/menu').then((response) => (response.json()));
+  return fetch('/api/menu').then((response) => (response.json()));
 }
 function cacheMenu() {
   return cache('/api/menu');

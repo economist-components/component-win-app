@@ -5,14 +5,12 @@ import pageTracker from '@economist/react-i13n-omniture/pagetracker';
 
 import Impart from '@economist/component-react-async-container';
 import cache from '@economist/component-react-async-container/cache';
+import fetch from './fetch';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
-import fetch from 'isomorphic-fetch';
-import fakeFetch from './fetch';
 
 function fetchArticle({ id }) { // eslint-disable-line id-length
-  const fetcher = (process.env.NODE_ENV === 'production') ? fetch : fakeFetch;
-  return fetcher(`/api/article/${id}`).then((response) => (response.json()));
+  return fetch(`/api/article/${id}`).then((response) => (response.json()));
 }
 function cacheArticle({ id }) { // eslint-disable-line id-length
   return cache(`/api/article/${id}`);

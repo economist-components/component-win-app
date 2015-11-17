@@ -105,7 +105,7 @@
   },
   "config": {
     "lint_opts": "--ignore-path .gitignore --ext .es6",
-    "testbundle_opts": "-r react -r react-dom -r .:./index.es6 -r ./example.js:example ./test/index.js -o testbundle.js",
+    "testbundle_opts": "-t [ envify --NODE_ENV test ] -r react -r react-dom -r .:./index.es6 -r ./example.js:example ./test/index.js -o testbundle.js",
     "ghpages_files": "*.html *.css *.js assets/"
   },
   "scripts": {
@@ -163,6 +163,7 @@
     "chai-spies": "^0.6.0",
     "chai-things": "^0.2.0",
     "cssnext": "^1.8.4",
+    "envify": "^3.4.0",
     "eslint": "^1.3.1",
     "eslint-config-strict": "^7.0.1",
     "eslint-config-strict-react": "^4.0.0",
