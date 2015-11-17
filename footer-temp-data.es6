@@ -35,25 +35,25 @@ export default {
     {
       title: 'Facebook',
       meta: 'facebook',
-      href: 'https://www.facebook.com/TheEconomist',
+      href: 'https://www.facebook.com/WorldIn',
       internal: false,
     },
     {
       title: 'Twitter',
       meta: 'twitter',
-      href: 'https://twitter.com/TheEconomist',
+      href: 'https://twitter.com/econworldin',
       internal: false,
     },
     {
       title: 'Linkedin',
       meta: 'linkedin',
-      href: 'https://www.linkedin.com/grp/home?gid=3056216',
+      href: 'https://www.linkedin.com/company/the-economist',
       internal: false,
     },
     {
       title: 'Google',
       meta: 'googleplus',
-      href: 'https://plus.google.com/100470681032489535736/posts',
+      href: 'https://plus.google.com/+TheEconomist',
       internal: false,
     },
     {
