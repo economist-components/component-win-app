@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-win-app",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "The WIN React App",
   "author": "The Economist (http://economist.com)",
   "license": "MIT",
@@ -150,7 +150,7 @@
     "react": "^0.14.2",
     "react-router-component": "^0.27.2",
     "react-sticky-position": "the-economist-editorial/react-sticky-position",
-    "slug": "^0.9.1"
+    "slugger": "^1.0.1"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.4.3",

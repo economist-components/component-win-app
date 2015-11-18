@@ -1,24 +1,13 @@
 /* eslint-disable id-match */
-import slug from 'slug';
-
-slug.defaults.mode = 'pretty';
-slug.defaults.modes.rfc3986 = {
-  replacement: '_',
-  symbols: true,
-  remove: /[.]/g,
-  lower: true,
-  charmap: slug.charmap,
-  multicharmap: slug.multicharmap,
-};
-slug.defaults.modes.pretty = {
-  replacement: '_',
-  symbols: true,
-  remove: /[.]/g,
-  lower: true,
-  charmap: slug.charmap,
-  multicharmap: slug.multicharmap,
-};
+import slugger from 'slugger';
 import OmnitureUtils from '@economist/react-i13n-omniture/OmnitureUtils';
+function slug(string) {
+  let sluggedString = '';
+  if (typeof string === 'string') {
+    sluggedString = slugger(string, { replacement: '_' });
+  }
+  return sluggedString;
+}
 
 const OmnitureConfig = {
   account: process.env.NODE_ENV === 'production' ? 'economistprod' : 'economistdev',
