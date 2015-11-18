@@ -1,6 +1,7 @@
 import React from 'react';
 import DefaultAppHeader from './header';
 import DefaultAppFooter from './footer';
+import Cookie from '@economist/component-cookie-message';
 import {
   AppContainer as DefaultAppContainer,
   AppContentContainer as DefaultAppContentContainer,
@@ -31,6 +32,7 @@ export default function AppTemplate({
       {header}
       <AppContentContainer>{children}</AppContentContainer>
       {footer}
+      <Cookie />
     </AppContainer>
   );
 }
