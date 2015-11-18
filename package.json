@@ -134,6 +134,7 @@
   },
   "dependencies": {
     "@economist/component-404": "^3.0.0",
+    "@economist/component-cookie-message": "^1.0.3",
     "@economist/component-font-neutra2": "^1.0.4",
     "@economist/component-font-officina": "^1.0.1",
     "@economist/component-footer": "^1.4.0",
