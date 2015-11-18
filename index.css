@@ -66,4 +66,6 @@
 .ad-panel__container {
     width: 100%;
     box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding: 3%;
 }
