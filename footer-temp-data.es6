@@ -69,7 +69,7 @@ export default {
       internal: false,
     },
     {
-      title: 'mail',
+      title: 'Newsletters',
       meta: 'mail',
       href: 'http://www.economist.com/newsletters',
       internal: true,
