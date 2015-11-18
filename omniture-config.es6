@@ -1,24 +1,9 @@
 /* eslint-disable id-match */
-import slug from 'slug';
-
-slug.defaults.mode = 'pretty';
-slug.defaults.modes.rfc3986 = {
-  replacement: '_',
-  symbols: true,
-  remove: /[.]/g,
-  lower: true,
-  charmap: slug.charmap,
-  multicharmap: slug.multicharmap,
-};
-slug.defaults.modes.pretty = {
-  replacement: '_',
-  symbols: true,
-  remove: /[.]/g,
-  lower: true,
-  charmap: slug.charmap,
-  multicharmap: slug.multicharmap,
-};
+import slugger from 'slugger';
 import OmnitureUtils from '@economist/react-i13n-omniture/OmnitureUtils';
+function slug(string) {
+  return slugger(String(string || ''), { replacement: '_' });
+}
 
 const OmnitureConfig = {
   account: process.env.NODE_ENV === 'production' ? 'economistprod' : 'economistdev',
@@ -50,12 +35,6 @@ const OmnitureConfig = {
     // web or print, They depend by the source of the articles.
     prop3: 'print',
     eVar3: 'print',
-    // DFP Site
-    prop41: 'fmsq',
-    eVar41: 'fmsq',
-    // DFP Zone
-    prop42: 'dewi',
-    eVar42: 'dewi',
   },
   // Set the URL of the Omniture script you want to use.
   /* eslint-disable arrow-body-style */
