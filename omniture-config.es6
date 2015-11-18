@@ -1,4 +1,4 @@
-/* eslint-disable id-match, id-length */
+/* eslint-disable id-match */
 import slug from 'slug';
 
 slug.defaults.mode = 'pretty';
@@ -26,7 +26,7 @@ const OmnitureConfig = {
     visitorNamespace: 'economist',
     trackingServer: 'stats.economist.com',
     trackingServerSecure: 'sstats.economist.com',
-    dc: '122',
+    dc: '122', // eslint-disable-line id-length
     linkTrackVars: [
       'pageName',
       'channel',
@@ -58,18 +58,13 @@ const OmnitureConfig = {
     eVar42: 'dewi',
   },
   // Set the URL of the Omniture script you want to use.
-  //externalScript: process.env.NODE_ENV === 'production'
-  // ? '//www.theworldin.com/assets/omniture_h254.min.js' : '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
-  //externalScript: `//${document.location.hostname}:${document.location.port}/assets/omniture_h254.min.js`,
   externalScript: '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
   eventHandlers: {
-    click: (nodeProps) => {
+    click: (nodeProps) => ({
       // Just a fake manipulation
-      return {
-        linkType: nodeProps.product,
-        linkName: nodeProps.element,
-      };
-    },
+      linkType: nodeProps.product,
+      linkName: nodeProps.element,
+    }),
     pageview: (nodeProps) => {
       // World In configuration
       // prop1 is "the_world_if" for all pages (currently the world if section page prop 1 has "homepage"
