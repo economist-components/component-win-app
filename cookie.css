@@ -4,5 +4,12 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  right: 0; 
+  right: 0;
+  z-index: 1;
+  background: #4a4a4a;
+  color: #f0f0f0;
+}
+
+.cookie-message--close {
+  fill: #f0f0f0 !important;
 }

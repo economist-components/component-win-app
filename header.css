@@ -111,6 +111,15 @@
   }
 }
 
+@media (width <= 780px){
+  .world-in-header__logo {
+    padding: 1rem;
+  }
+  .world-in-header__logo img {
+    width: 80px;
+  }
+}
+
 @media (--viewport-medium){
   .world-in-header__logo {
     display: none;

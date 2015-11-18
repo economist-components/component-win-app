@@ -18,17 +18,6 @@
   width: 100%;
 }
 
-/*.world-in-header {
-  max-width: 1190px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: calc(50% - 595px) !important;
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
-  z-index: 9999999999;
-}*/
-
 .world-in-header__logo-title {
   font-family: Neutra2Display-Titling;
   display: inline-block;
@@ -48,22 +37,13 @@
 }
 
 @media (max-width: 680px) {
-  .world-in-app {
-    margin: 50px auto 0;
-  }
-
   .world-in-header__logo-title {
     font-size: 28px;
     line-height: 44px;
   }
-
 }
 
 @media (max-width: 540px) {
-  .world-in-app {
-    margin: 46px auto 0;
-  }
-
   .world-in-header__logo-title {
     font-size:  16px;
     line-height: 36px;
@@ -81,4 +61,9 @@
   .world-in-header__logo-title {
     display: none;
   }
+}
+
+.ad-panel__container {
+    width: 100%;
+    box-sizing: border-box;
 }
