@@ -39,12 +39,6 @@ const OmnitureConfig = {
     // web or print, They depend by the source of the articles.
     prop3: 'print',
     eVar3: 'print',
-    // DFP Site
-    prop41: 'fmsq',
-    eVar41: 'fmsq',
-    // DFP Zone
-    prop42: 'dewi',
-    eVar42: 'dewi',
   },
   // Set the URL of the Omniture script you want to use.
   /* eslint-disable arrow-body-style */
