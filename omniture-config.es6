@@ -1,23 +1,23 @@
+/* eslint-disable id-match, id-length */
 import slug from 'slug';
 
-slug.defaults.mode ='pretty';
-slug.defaults.modes['rfc3986'] = {
-    replacement: '_',      // replace spaces with replacement
-    symbols: true,         // replace unicode symbols or not
-    remove: /[.]/g,
-    lower: true,           // result in lower case
-    charmap: slug.charmap, // replace special characters
-    multicharmap: slug.multicharmap // replace multi-characters
+slug.defaults.mode = 'pretty';
+slug.defaults.modes.rfc3986 = {
+  replacement: '_',
+  symbols: true,
+  remove: /[.]/g,
+  lower: true,
+  charmap: slug.charmap,
+  multicharmap: slug.multicharmap,
 };
-slug.defaults.modes['pretty'] = {
-    replacement: '_',
-    symbols: true,
-    remove: /[.]/g,
-    lower: true,
-    charmap: slug.charmap,
-    multicharmap: slug.multicharmap
+slug.defaults.modes.pretty = {
+  replacement: '_',
+  symbols: true,
+  remove: /[.]/g,
+  lower: true,
+  charmap: slug.charmap,
+  multicharmap: slug.multicharmap,
 };
-import User from '@economist/user';
 import OmnitureUtils from '@economist/react-i13n-omniture/OmnitureUtils';
 
 const OmnitureConfig = {
@@ -46,7 +46,7 @@ const OmnitureConfig = {
       'prop46',
       'contextData.subsection',
     ].join(''),
-    server: (typeof document !== 'undefined') ? document.location.hostname : '',
+    server: (typeof document === 'undefined') ? '' : document.location.hostname,
     // web or print, They depend by the source of the articles.
     prop3: 'print',
     eVar3: 'print',
@@ -58,8 +58,9 @@ const OmnitureConfig = {
     eVar42: 'dewi',
   },
   // Set the URL of the Omniture script you want to use.
-  // TODO: Improve this part
-  //externalScript: process.env.NODE_ENV === 'production' ? '//www.theworldin.com/assets/omniture_h254.min.js' : '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
+  //externalScript: process.env.NODE_ENV === 'production'
+  // ? '//www.theworldin.com/assets/omniture_h254.min.js' : '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
+  //externalScript: `//${document.location.hostname}:${document.location.port}/assets/omniture_h254.min.js`,
   externalScript: '//umbobabo.github.io/react-i13n-omniture/assets/omniture_h254.min.js',
   eventHandlers: {
     click: (nodeProps) => {
@@ -75,16 +76,17 @@ const OmnitureConfig = {
       // prop 2 should have issue date in the format of the rest of the site.
       // prop3 is web
       // prop4 - homepage should be "section|home"
-      // prop5 ONLY populates for content - articles, blogs, graphs, etc. Not for home page.
-      // Is prop 13 can be populated it would be helpful to overall tracking. this is the cookie reading to identify who users on the site are.
-
+      // prop5 ONLY populates for content - articles, blogs, graphs, etc.
+      // Not for home page.
+      // Is prop 13 can be populated it would be helpful to overall tracking.
+      // this is the cookie reading to identify who users on the site are.
       // Override default values
       let articleSource = {};
-      if(nodeProps.articleSource){
+      if (nodeProps.articleSource) {
         articleSource = {
           prop3: nodeProps.articleSource,
           eVar3: nodeProps.articleSource,
-        }
+        };
       }
       // template: 'article' or 'section|home'
       // topic: e.g. 'Politics';
@@ -96,12 +98,23 @@ const OmnitureConfig = {
         template: '',
         ...nodeProps,
       };
+      let pageName = '';
+      if (nodeProps.template === 'channel') {
+        pageName = `${slug(nodeProps.product)}|home`;
+      } else {
+        pageName = [
+          slug(nodeProps.product),
+          slug(nodeProps.template),
+          slug((nodeProps.topic === '') ? nodeProps.product : nodeProps.topic),
+          slug(nodeProps.title) ].join('|');
+      }
+
       return {
         channel: slug(nodeProps.product),
-        pageName: [ slug(nodeProps.product),  slug(nodeProps.template), slug((nodeProps.topic!='') ? nodeProps.topic : nodeProps.product), slug(nodeProps.title) ].join('|'),
+        pageName,
         pageURL: location.href,
         contextData: {
-          subsection: slug(nodeProps.topic)
+          subsection: (nodeProps.topic) ? slug(nodeProps.topic) : '',
         },
         prop1: slug(nodeProps.product),
         prop4: slug(nodeProps.template),
@@ -109,12 +122,12 @@ const OmnitureConfig = {
         prop6: OmnitureUtils.graphShot(),
         prop8: OmnitureUtils.hourOfTheDay(),
         prop10: OmnitureUtils.fullDate(),
-        prop11: User.isLoggedIn() ? "logged_in" : "not_logged_in",
+        prop11: '',
         prop13: OmnitureUtils.userType(),
         prop31: OmnitureUtils.articlePublishDate(nodeProps.publishDate),
         prop32: location.href,
         prop34: OmnitureUtils.deviceDetection(),
-        prop40: nodeProps.userID,
+        prop40: '',
         prop46: OmnitureUtils.mulIP(),
         prop53: OmnitureUtils.subscriptionRemaningMonths(),
         prop54: OmnitureUtils.subscriptionInfo(),
@@ -125,12 +138,13 @@ const OmnitureConfig = {
         eVar34: OmnitureUtils.deviceDetection(),
         eVar8: OmnitureUtils.hourOfTheDay(),
         eVar10: OmnitureUtils.fullDate(),
-        eVar11: User.isLoggedIn() ? "logged_in" : "not_logged_in",
+        eVar11: '',
         eVar13: OmnitureUtils.userType(),
         eVar31: OmnitureUtils.articlePublishDate(nodeProps.publishDate),
         eVar32: location.href,
-        eVar40: nodeProps.userID,
-        ...articleSource
+        eVar40: '',
+        events: 'event2',
+        ...articleSource,
       };
     },
   },

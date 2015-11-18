@@ -3,6 +3,10 @@
 @import '@economist/component-404';
 @import './header';
 @import './footer';
+:root {
+  --fontfamily-body-custom: 'Officina';
+  --fontfamily-display-custom: 'Neutra2';
+}
 @import './cookie';
 @import '@economist/component-win-articlepage';
 @import '@economist/component-win-homepage';
