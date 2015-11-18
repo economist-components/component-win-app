@@ -2,11 +2,7 @@
 import slugger from 'slugger';
 import OmnitureUtils from '@economist/react-i13n-omniture/OmnitureUtils';
 function slug(string) {
-  let sluggedString = '';
-  if (typeof string === 'string') {
-    sluggedString = slugger(string, { replacement: '_' });
-  }
-  return sluggedString;
+  return slugger(String(string || ''), { replacement: '_' });
 }
 
 const OmnitureConfig = {
