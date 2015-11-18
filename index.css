@@ -8,6 +8,7 @@
   --fontfamily-display-custom: 'Neutra2';
 }
 @import './cookie';
+@import './loader';
 @import '@economist/component-win-articlepage';
 @import '@economist/component-win-homepage';
 
@@ -16,6 +17,7 @@
   margin: 0 auto 0;
   position: relative;
   width: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 .world-in-header__logo-title {
