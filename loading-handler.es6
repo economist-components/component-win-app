@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function renderLoading() {
-  return (<div>Loading...</div>);
+  return (<div className="world-in-app__loader"><div className="loader"></div></div>);
 }
