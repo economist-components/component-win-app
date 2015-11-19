@@ -120,6 +120,8 @@ const OmnitureConfig = {
         eVar40: '',
         events: 'event2',
         ...articleSource,
+        ...OmnitureUtils.campaignTracking(),
+        ...OmnitureUtils.campaignStackingTracking(),
       };
     },
   },
