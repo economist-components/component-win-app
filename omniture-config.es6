@@ -6,7 +6,7 @@ function slug(string) {
 }
 
 const OmnitureConfig = {
-  account: process.env.NODE_ENV === 'production' ? 'production' : 'economistdev',
+  account: process.env.NODE_ENV === 'production' ? 'economistcomprod' : 'economistdev',
   initialProps: {
     visitorNamespace: 'economist',
     trackingServer: 'stats.economist.com',
