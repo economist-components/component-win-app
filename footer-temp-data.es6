@@ -35,7 +35,7 @@ export default {
     {
       title: 'Facebook',
       meta: 'facebook',
-      href: 'https://www.facebook.com/WorldIn',
+      href: 'https://www.facebook.com/TheWorldIn2016',
       internal: false,
     },
     {
