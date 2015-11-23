@@ -35,9 +35,15 @@ const OmnitureConfig = {
     // web or print, They depend by the source of the articles.
     prop3: 'print',
     eVar3: 'print',
+    charSet: 'ISO-8859-1',
+    /* Conversion Config */
+    currencyCode: 'USD',
+    linkInternalFilters: 'javascript:,economist.com,economistsubscriptioncom,brightcove.com,doubleclick.net',
   },
   // Set the URL of the Omniture script you want to use.
   /* eslint-disable arrow-body-style */
+  campaignTracking: true,
+  campaignStackingTracking: true,
   externalScript: '/assets/omniture_h254.min.js',
   eventHandlers: {
     click: (nodeProps) => ({
@@ -120,8 +126,6 @@ const OmnitureConfig = {
         eVar40: '',
         events: 'event2',
         ...articleSource,
-        ...OmnitureUtils.campaignTracking(),
-        ...OmnitureUtils.campaignStackingTracking(),
       };
     },
   },
