@@ -67,7 +67,7 @@ export default (url) => {
             link: {
               href: '/article/hello-world',
             },
-            title: 'hello world',
+            title: 'hello world hero',
             flytitle: 'hello world flytitle',
             rubric: 'hello world rubric',
             content: [
@@ -91,7 +91,7 @@ export default (url) => {
             link: {
               href: '/article/hello-world',
             },
-            title: 'hello world',
+            title: 'hello world 1',
             flytitle: 'hello world flytitle',
             rubric: 'hello world rubric',
             content: [
@@ -115,7 +115,7 @@ export default (url) => {
             link: {
               href: '/article/hello-world',
             },
-            title: 'hello world',
+            title: 'hello world 2',
             flytitle: 'hello world flytitle',
             rubric: 'hello world rubric',
             content: [
@@ -139,7 +139,79 @@ export default (url) => {
             link: {
               href: '/article/hello-world',
             },
-            title: 'hello world',
+            title: 'hello world 3',
+            flytitle: 'hello world flytitle',
+            rubric: 'hello world rubric',
+            content: [
+              'this is paragraph 1',
+              'this is paragraph 2',
+              'this is paragraph 3',
+            ],
+            sectionName: 'politics',
+            image: {
+              sources: [
+                { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+                { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+                { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+                { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+              ],
+              alt: 'this is the image description',
+            },
+          },
+          {
+            teaserId: '5',
+            link: {
+              href: '/article/hello-world',
+            },
+            title: 'hello world 4',
+            flytitle: 'hello world flytitle',
+            rubric: 'hello world rubric',
+            content: [
+              'this is paragraph 1',
+              'this is paragraph 2',
+              'this is paragraph 3',
+            ],
+            sectionName: 'politics',
+            image: {
+              sources: [
+                { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+                { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+                { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+                { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+              ],
+              alt: 'this is the image description',
+            },
+          },
+          {
+            teaserId: '6',
+            link: {
+              href: '/article/hello-world',
+            },
+            title: 'hello world 5',
+            flytitle: 'hello world flytitle',
+            rubric: 'hello world rubric',
+            content: [
+              'this is paragraph 1',
+              'this is paragraph 2',
+              'this is paragraph 3',
+            ],
+            sectionName: 'politics',
+            image: {
+              sources: [
+                { url: 'https://placehold.it/1792x1008', width: 896, height: 504, dppx: 2 },
+                { url: 'https://placehold.it/896x504', width: 896, height: 504, dppx: 1 },
+                { url: 'https://placehold.it/1536x864', width: 768, height: 432, dppx: 2 },
+                { url: 'https://placehold.it/768x432', width: 768, height: 432, dppx: 1 },
+              ],
+              alt: 'this is the image description',
+            },
+          },
+          {
+            teaserId: '7',
+            link: {
+              href: '/article/hello-world',
+            },
+            title: 'hello world 6',
             flytitle: 'hello world flytitle',
             rubric: 'hello world rubric',
             content: [
