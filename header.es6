@@ -78,7 +78,7 @@ function cacheMenu() {
   return cache('/api/menu');
 }
 
-export default function AppHeaderWithData(props) {
+export default function AppHeaderWithData(props = {}) {
   return (
     <Impart.RootContainer
       {...props}
