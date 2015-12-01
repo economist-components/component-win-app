@@ -1,4 +1,4 @@
-const timeout = 2000;
+const timeout = 0;
 function delay(milliseconds) {
   return new Promise((resolve) => (setTimeout(resolve, milliseconds)));
 }
