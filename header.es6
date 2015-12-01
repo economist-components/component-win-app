@@ -37,7 +37,7 @@ function AppHeader({ navigationItems }) {
                   title="Home page"
                   className="world-in-header__home-logo-link"
                 >
-                  <Icon icon="home" />
+                  <Icon icon="home" size="48px" />
                 </a>
               </div>
               <div className="world-in-header__hamburger-placeholder">
