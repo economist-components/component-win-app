@@ -13,6 +13,10 @@ export default class WorldInApp extends Component {
     path: PropTypes.string.isRequired,
   }
 
+  static defaultProps = {
+    path: '/',
+  }
+
   render() {
     const { path, ...remainingProps } = this.props;
     return (

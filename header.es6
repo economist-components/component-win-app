@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react';
 import StickyPosition from 'react-sticky-position';
 import Navigation from '@economist/component-win-navigation';
 import Icon from '@economist/component-icon';
+import { extract, parse } from 'query-string';
 
 import Impart from '@economist/component-react-async-container';
 import cache from '@economist/component-react-async-container/cache';
@@ -10,12 +11,14 @@ import fetch from './fetch';
 import loadingHandler from './loading-handler';
 import failureHandler from './failure-handler';
 
-function AppHeader({ navigationItems }) {
-  const focusCategorySlug = null;
-  const focusSubcategorySlug = null;
-  const activeCategorySlug = null;
-  const activeSubcategorySlug = null;
-  const activeArticleId = null;
+function AppHeader({ path, navigationItems }) {
+  const queryString = extract(path);
+  const query = queryString ? parse(queryString) : {};
+  const focusNavigation = query.navigation || false;
+  const focusCategorySlug = query.category || null;
+  const focusSubcategorySlug = query.subcategory || null;
+  const id = (path.match(/\d+/) || []).pop();
+  const activeArticleId = id ? Number(id) : null;
   return (
     <StickyPosition className="world-in-header world-in-header--sticked">
       <div className="world-in-header__inner-wrapper">
@@ -46,10 +49,9 @@ function AppHeader({ navigationItems }) {
             <div className="world-in-header__main-navigation">
               <Navigation
                 navigationItems={navigationItems}
+                focusNavigation={focusNavigation}
                 focusCategorySlug={focusCategorySlug}
                 focusSubcategorySlug={focusSubcategorySlug}
-                activeCategorySlug={activeCategorySlug}
-                activeSubcategorySlug={activeSubcategorySlug}
                 activeArticleId={activeArticleId}
               />
             </div>
@@ -76,9 +78,10 @@ function cacheMenu() {
   return cache('/api/menu');
 }
 
-export default function AppHeaderWithData() {
+export default function AppHeaderWithData(props = {}) {
   return (
     <Impart.RootContainer
+      {...props}
       Component={AppHeader}
       cache={cacheMenu}
       route={fetchMenu}

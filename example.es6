@@ -13,5 +13,5 @@ const TrackedApp = setupI13n(WorldInApp, {
   isViewportEnabled: true,
 }, [ new ReactI13nOmniture(OmnitureConfig) ]);
 export default (
-  <TrackedApp path="/article/10501" />
+  <TrackedApp path="/article/10501?navigation=true&category=leaders" />
 );
