@@ -1,6 +1,10 @@
 export default {
   customer: [
     {
+      title: 'Buy The World in 2016',
+      href: 'http://shop.economist.com/products/the-world-in-2016',
+    },
+    {
       title: 'Subscribe',
       href: 'https://subscriptions.economist.com',
     },
