@@ -68,11 +68,14 @@
 .ad-panel__container {
     width: 100%;
     box-sizing: border-box;
-    background-color: #f0f0f0;
     padding: 1% 3% 3% 3% !important;
 }
 
 .ad-panel__container--styled .ad-panel__title,
 .ad-panel__container--styled .ad-panel__googlead {
   padding: 0;
+}
+
+.ArticleTemplate--section p:empty {
+   display: none;
 }
