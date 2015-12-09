@@ -4,35 +4,39 @@
 @import 'sticky';
 
 .world-in-header,
-.world-in-header__inner-wrapper {
+.world-in-header__inner-wrapper,
+.world-in-header__hamburger-placeholder {
   background-color: var(--color-economist);
 }
 
-.world-in-header__inner-wrapper {
-  display: table-row;
+.world-in-header {
+  display: block;
+  width: 100%;
 }
 
+.world-in-header__navigation-inner-wrapper {
+  position: relative;
+}
+
+.world-in-header__main-bar {
+  display: table-cell;
+  width: 100%;
+  border-right: 0 none;
+}
 
 .world-in-header__navigation {
   width: 100%;
 }
 
-.world-in-header__navigation,
 .world-in-header__logo {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.world-in-header__logo {
-  padding: 0 0.8rem;
+  display: none;
 }
 
 .world-in-header__main-bar {
   width: 100%;
   border-bottom: solid 1px var(--color-thimphu);
-  border-right: solid 1px var(--color-thimphu);
   box-sizing: border-box;
-  float: left;
+  display: table;
 }
 
 .world-in-header__main-bar use {
@@ -46,23 +50,9 @@
 .world-in-header__economist-logo,
 .world-in-header__main-bar__spacer,
 .world-in-header__home-icon,
-.world-in-header__main-bar__share-bar,
+.world-in-header__sharebar,
 .world-in-header__hamburger-placeholder {
   display: table-cell;
-}
-
-.world-in-header__economist-logo,
-.world-in-header__home-icon,
-.world-in-header__main-bar__share-bar,
-.world-in-header__hamburger-placeholder {
-    width: 60px;
-}
-
-.world-in-header__economist-logo-link {
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 7px 0 0 11px;
 }
 
 .world-in-header__main-bar__spacer {
@@ -71,117 +61,111 @@
 
 .world-in-header__economist-logo {
   border-right: solid 1px var(--color-thimphu);
-  vertical-align: middle;
-  min-width: 48px;
-  height: 48px;
   background-color: var(--color-beijing);
 }
+
 .world-in-header__home-icon {
   border-right: solid 1px var(--color-thimphu);
   border-left: solid 1px var(--color-thimphu);
 }
-.world-in-header__home-icon {
-  vertical-align: middle;
-  padding: 0 3px;
-}
 
+.world-in-header__economist-logo,
+.world-in-header__home-icon,
+.world-in-header__sharebar,
 .world-in-header__hamburger-placeholder {
-  min-width: 60px;
-  background-color: var(--color-economist);
-}
-.world-in-header__economist-logo-link,
-.world-in-header__home-logo-link {
-    float: left;
+  width: 49px;
+  height: 49px;
+  min-width: 49px;
+  line-height: 0;
 }
 
-.world-in-header__home-logo-link {
-  position: relative;
-  width: 48px;
-  height: 48px;
+.world-in-header__economist-logo,
+.world-in-header__home-icon,
+.world-in-header__hamburger-placeholder {
+  vertical-align: middle;
+  text-align: center;
 }
 
-.world-in-header__home-logo-link  .Icon-home {
-  position: absolute;
-  height: 54px;
-  width: 54px;
-  left: -4px;
-  top: -5px;
+.world-in-header__home-logo-link,
+.world-in-header__economist-logo-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.Icon-close,
+.Icon-hamburger {
+  padding: 0;
 }
 
 .navigation {
-  margin: auto;
+  border-bottom: none;
+  margin-top: 0;
 }
 
-@custom-media --viewport-medium (width <= 639px);
-@custom-media --viewport-big (width >= 640px);
+.navigation__menu-button:hover {
+  background: none;
+}
 
-@media (--viewport-big){
+.world-in-header .toggle-display[data-display="open"] .toggle-display__button {
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.world-in-header .toggle-display[data-display="open"] .toggle-display__content {
+  border-top: solid 1px var(--color-thimphu);
+}
+
+@media (width >= 640px) {
   .world-in-header__home-icon,
   .world-in-header__hamburger-placeholder {
     display: none;
   }
+
+  .world-in-header__main-bar {
+    border-right: solid 1px var(--color-thimphu);
+  }
+
+  .world-in-header__inner-wrapper {
+    display: table;
+  }
+
+  .world-in-header__navigation,
+  .world-in-header__logo {
+    display: table-cell;
+  }
+
+  .world-in-header__logo {
+    padding: 0.8rem;
+    vertical-align: middle;
+  }
+
+  .world-in-header__logo img {
+    width: 5pc;
+  }
+
   .world-in-header__main-bar {
     background-color: var(--color-beijing);
   }
+
+  .world-in-header .toggle-display[data-display="open"] .toggle-display__button {
+    position: static;
+    height: 49px;
+  }
+
+  .world-in-header .toggle-display[data-display="open"] .toggle-display__content {
+    border-top: 0 none;
+  }
 }
 
-@media (width <= 780px){
+@media (width >= 780px) {
   .world-in-header__logo {
-    padding: 1rem;
+    padding: 0 0.8rem;
   }
+
   .world-in-header__logo img {
-    width: 80px;
-  }
-}
-
-@media (--viewport-medium){
-  .world-in-header__logo {
-    display: none;
-  }
-  .world-in-header {
-    display: block;
-    width: 100%;
-  }
-  .world-in-header__navigation {
-    display: table;
-    width: 100%;
-  }
-  .world-in-header__navigation-inner-wrapper {
-    display: table-row;
-  }
-  .world-in-header__main-bar,
-  .world-in-header__main-navigation {
-    display: table-cell;
-  }
-  .world-in-header__main-bar {
-    width: 100%;
-  }
-  .world-in-header__navigation-inner-wrapper {
-    position: relative;
-  }
-  .world-in-header__main-navigation {
-    position: absolute;
-    top: 48px;
-    left: 0;
-    right: 0;
-  }
-  .world-in-header__main-bar {
-    border-right: none !important;
-  }
-  .navigation {
-    border-bottom: none;
-  }
-  .navigation__menu-button:hover {
-    background: none;
-  }
-  .navigation__menu-button {
-    width: 48px;
-    height: 48px;
-    top: -48px;
-    right: 6px;
-  }
-  .Icon-hamburger,
-  .Icon-close {
-      padding: 0;
+    width: 120px;
   }
 }

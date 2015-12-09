@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 
 import StickyPosition from 'react-sticky-position';
 import Navigation from '@economist/component-win-navigation';
+import WinSharebar from '@economist/component-win-sharebar';
 import Icon from '@economist/component-icon';
 
 import Impart from '@economist/component-react-async-container';
@@ -23,13 +24,16 @@ function AppHeader({ navigationItems }) {
           <div className="world-in-header__navigation-inner-wrapper">
             <div className="world-in-header__main-bar">
               <div className="world-in-header__economist-logo">
-                <a className="world-in-header__economist-logo-link"
+                <a
+                  className="world-in-header__economist-logo-link"
                   href="http://www.economist.com" title="The Economist website"
                 >
                   <Icon icon="economist-small" size="26px" />
                 </a>
               </div>
-              <div className="world-in-header__main-bar__spacer">
+              <div className="world-in-header__main-bar__spacer" />
+              <div className="world-in-header__sharebar">
+                <WinSharebar />
               </div>
               <div className="world-in-header__home-icon">
                 <a
@@ -37,11 +41,10 @@ function AppHeader({ navigationItems }) {
                   title="Home page"
                   className="world-in-header__home-logo-link"
                 >
-                  <Icon icon="home" size="48px" />
+                  <Icon icon="home" size="49px" />
                 </a>
               </div>
-              <div className="world-in-header__hamburger-placeholder">
-              </div>
+              <div className="world-in-header__hamburger-placeholder" />
             </div>
             <div className="world-in-header__main-navigation">
               <Navigation
