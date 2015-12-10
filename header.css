@@ -106,17 +106,7 @@
   background: none;
 }
 
-.world-in-header .toggle-display[data-display="open"] .toggle-display__button {
-  height: 52px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 11;
-}
 
-.world-in-header .toggle-display[data-display="open"] .toggle-display__content {
-  border-top: solid 1px var(--color-thimphu);
-}
 
 @media (width >= 640px) {
   .world-in-header__home-icon,
@@ -148,15 +138,6 @@
 
   .world-in-header__main-bar {
     background-color: var(--color-beijing);
-  }
-
-  .world-in-header .toggle-display[data-display="open"] .toggle-display__button {
-    position: static;
-    height: 49px;
-  }
-
-  .world-in-header .toggle-display[data-display="open"] .toggle-display__content {
-    border-top: 0 none;
   }
 }
 
