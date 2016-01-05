@@ -12,6 +12,7 @@
 @import '@economist/component-win-articlepage';
 @import '@economist/component-win-homepage';
 @import '@economist/component-win-sharebar';
+@import '@economist/component-win-cover';
 
 .world-in-app {
   max-width: 1190px;
