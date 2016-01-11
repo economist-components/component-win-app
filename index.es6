@@ -12,7 +12,7 @@ export default class WorldInApp extends Component {
 
   static propTypes = {
     path: PropTypes.string.isRequired,
-  }
+  };
 
   render() {
     const { path, ...remainingProps } = this.props;
