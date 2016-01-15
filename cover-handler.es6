@@ -402,6 +402,7 @@ const entries = [
     counterpart.
     </p>`,
     byline: 'From The World in 1987',
+    url: '/article/11814',
   },
 ];
 export default function CoverHandler() {
