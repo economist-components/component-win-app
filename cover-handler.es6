@@ -3,7 +3,7 @@ import WinCover from '@economist/component-win-cover';
 
 const entries = [
   {
-    tabtitle: '2000',
+    tabtitle: '2016',
     title: '00',
     image: '',
     bodycopy: `<h2>Welcome...</h2>
