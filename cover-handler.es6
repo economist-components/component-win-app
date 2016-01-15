@@ -12,7 +12,7 @@ const entries = [
     issue to reflect three decades of forward-thinking.
     </p>`,
     byline: 'From The World In 2000',
-    url: null,
+    url: 'http://worldin-stage.elasticbeanstalk.com/article/10447/world-2016',
   },
   {
     tabtitle: '2015',
