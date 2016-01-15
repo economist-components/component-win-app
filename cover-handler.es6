@@ -12,7 +12,7 @@ const entries = [
     issue to reflect three decades of forward-thinking.
     </p>`,
     byline: 'From The World In 2000',
-    url: 'http://worldin-stage.elasticbeanstalk.com/article/10447/world-2016',
+    url: '/article/10447/world-2016',
   },
   {
     tabtitle: '2015',
@@ -26,7 +26,7 @@ const entries = [
     women are to enjoy the same opportunities as men.
     </p>`,
     byline: 'From The World In 2015',
-    url: 'http://www.theworldin.com/article/12073',
+    url: '/article/12073',
   },
   {
     tabtitle: '2014',
@@ -39,7 +39,7 @@ const entries = [
     editor, hoped that Europe’s commemorations during 2014 might perhaps end a 100-year haunting.
     </p>`,
     byline: 'From The World In 2014',
-    url: 'http://www.theworldin.com/article/12072',
+    url: '/article/12072',
   },
   {
     tabtitle: '2013',
@@ -53,7 +53,7 @@ const entries = [
     out where might be the best place for a lucky baby born in 2013.
     </p>`,
     byline: 'The World In 2013',
-    url: 'http://www.theworldin.com/article/12071',
+    url: '/article/12071',
   },
   {
     tabtitle: '2012',
@@ -66,7 +66,7 @@ const entries = [
     lives to presidential politics.
     </p>`,
     byline: 'From The World In 2012',
-    url: 'http://www.theworldin.com/article/12070',
+    url: '/article/12070',
   },
   {
     tabtitle: '2011',
@@ -81,7 +81,7 @@ const entries = [
     arguing that the underlying rate of population growth was, in fact, slowing.
     </p>`,
     byline: 'From The World In 2011',
-    url: 'http://www.theworldin.com/article/12069',
+    url: '/article/12069',
   },
   {
     tabtitle: '2010',
@@ -95,7 +95,7 @@ const entries = [
     of advancing the cause of space exploration and travel.
     </p>`,
     byline: 'From The World In 2010',
-    url: 'http://www.theworldin.com/article/12068',
+    url: '/article/12068',
   },
   {
     tabtitle: '2009',
@@ -110,7 +110,7 @@ const entries = [
     reasons to keep reading our predictions.
     </p>`,
     byline: 'From The World In 2009',
-    url: 'http://www.theworldin.com/article/12067',
+    url: '/article/12067',
   },
   {
     tabtitle: '2008',
@@ -125,7 +125,7 @@ const entries = [
     niece, looked at what makes Bond such an enduring cultural character.
     </p>`,
     byline: 'From The World In 2008',
-    url: 'http://www.theworldin.com/article/12066',
+    url: '/article/12066',
   },
   {
     tabtitle: '2007',
@@ -140,7 +140,7 @@ const entries = [
     predicted that long hours would be back with a vengeance.
     </p>`,
     byline: 'From The World In 2009',
-    url: 'http://www.theworldin.com/article/12065',
+    url: '/article/12065',
   },
   {
     tabtitle: '2006',
@@ -151,7 +151,7 @@ const entries = [
     For The World In...'s 20th edition, we invited an historian, Niall Ferguson, to take a critical look at our record
     </p>`,
     byline: 'From The World In 2006',
-    url: 'http://www.theworldin.com/article/12064',
+    url: '/article/12064',
   },
   {
     tabtitle: '2005',
@@ -166,7 +166,7 @@ const entries = [
     improve enough to compete with digital cameras—eventually.
     </p>`,
     byline: 'From The World In 2005',
-    url: 'http://www.theworldin.com/article/12063',
+    url: '/article/12063',
   },
   {
     tabtitle: '2004',
@@ -179,7 +179,7 @@ const entries = [
     Czech Republic, looked ahead to a larger, livelier European Union.
     </p>`,
     byline: 'From The World In 2004',
-    url: 'http://www.theworldin.com/article/12062',
+    url: '/article/12062',
   },
   {
     tabtitle: '2003',
@@ -193,7 +193,7 @@ const entries = [
     time, took a gloomy view of the housing market and predicted that the bubble would burst.
     </p>`,
     byline: 'From The World In 2003',
-    url: 'http://www.theworldin.com/article/12061',
+    url: '/article/12061',
   },
   {
     tabtitle: '2002',
@@ -207,7 +207,7 @@ const entries = [
     to pay at the supermarket. It would alter forever Europe's view both of itself and of the world.
     </p>`,
     byline: 'From The World In 2002',
-    url: 'http://www.theworldin.com/article/12060',
+    url: '/article/12060',
   },
   {
     tabtitle: '2001',
@@ -221,7 +221,7 @@ const entries = [
     there, the EIU forecast that life in Afghanistan was going to get even worse.
     </p>`,
     byline: 'From The World In 2001',
-    url: 'http://www.theworldin.com/article/12059',
+    url: '/article/12059',
   },
   {
     tabtitle: '2000',
@@ -232,7 +232,7 @@ const entries = [
     Peter Drucker, the grandee of management science, took an early look at the disruptive power of e-commerce.
     </p>`,
     byline: 'From The World In 2000',
-    url: 'http://www.theworldin.com/article/12058',
+    url: '/article/12058',
   },
   {
     tabtitle: '1999',
@@ -246,7 +246,7 @@ const entries = [
     that no undemocratic state could expect its sovereignty to remain untouched.
     </p>`,
     byline: 'From The World In 1999',
-    url: 'http://www.theworldin.com/article/12057',
+    url: '/article/12057',
   },
   {
     tabtitle: '1998',
@@ -259,7 +259,7 @@ const entries = [
     it then, would transform every facet of life.
     </p>`,
     byline: 'From The World In 1998',
-    url: 'http://www.theworldin.com/article/12056',
+    url: '/article/12056',
   },
   {
     tabtitle: '1997',
@@ -272,7 +272,7 @@ const entries = [
     whether Hong Kong would survive as a democratic, free-market economy.
     </p>`,
     byline: 'From The World In 1997',
-    url: 'http://www.theworldin.com/article/12055',
+    url: '/article/12055',
   },
   {
     tabtitle: '1996',
@@ -284,7 +284,7 @@ const entries = [
     out his ideas for the country in the coming year.
     </p>`,
     byline: 'From The World In 1996',
-    url: 'http://www.theworldin.com/article/12048',
+    url: '/article/12048',
   },
   {
     tabtitle: '1995',
@@ -296,7 +296,7 @@ const entries = [
     crazy and be more innovative, adventurous and imaginative.
     </p>`,
     byline: 'From The World In 1995',
-    url: 'http://www.theworldin.com/article/12046',
+    url: '/article/12046',
   },
   {
     tabtitle: '1994',
@@ -310,7 +310,7 @@ const entries = [
     economies were about to enter the fray.
     </p>`,
     byline: 'From The World In 1994',
-    url: 'http://www.theworldin.com/article/12045',
+    url: '/article/12045',
   },
   {
     tabtitle: '1993',
@@ -324,7 +324,7 @@ const entries = [
     president would be able to put his "new Democrat" ideas into practice.
     </p>`,
     byline: 'From The World In 1993',
-    url: 'http://www.theworldin.com/article/12044',
+    url: '/article/12044',
   },
   {
     tabtitle: '1992',
@@ -336,7 +336,7 @@ const entries = [
     was headed 500 years after Columbus landed in the New World.
     </p>`,
     byline: 'From The World In 1992',
-    url: 'http://www.theworldin.com/article/12043',
+    url: '/article/12043',
   },
   {
     tabtitle: '1991',
@@ -349,7 +349,7 @@ const entries = [
     predicted its property market would be next to fall to earth.
     </p>`,
     byline: 'From The World In 1991',
-    url: 'http://www.theworldin.com/article/12042',
+    url: '/article/12042',
   },
   {
     tabtitle: '1990',
@@ -363,7 +363,7 @@ const entries = [
     freed by the fall of the Soviet Union.
     </p>`,
     byline: 'From The World In 1990',
-    url: 'http://www.theworldin.com/article/12041',
+    url: '/article/12041',
   },
   {
     tabtitle: '1989',
@@ -375,7 +375,7 @@ const entries = [
     (relatively) optimistic view of the 1990s.
     </p>`,
     byline: 'From The World In 1989',
-    url: 'http://www.theworldin.com/article/12040',
+    url: '/article/12040',
 
   },
   {
@@ -389,7 +389,7 @@ const entries = [
     halt the march of a seemingly unstoppable disease.
     </p>`,
     byline: 'From The World In 1988',
-    url: 'http://www.theworldin.com/article/11815',
+    url: '/article/11815',
   },
   {
     tabtitle: '1987',
