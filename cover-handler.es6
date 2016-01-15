@@ -8,10 +8,10 @@ const entries = [
     image: '',
     bodycopy: `<h2>Welcome...</h2>
     <p>
-    To mark the 30th edition of the <em>The World In</em>, we have chosen one article from each
+    To mark the 30th edition of the <em>The World in</em>, we have chosen one article from each
     issue to reflect three decades of forward-thinking.
     </p>`,
-    byline: 'From The World In 2000',
+    byline: 'From The World in 2000',
     url: '/article/10447/world-2016',
   },
   {
@@ -21,11 +21,11 @@ const entries = [
     bodycopy: `<h2>Unfinished business for the world's women</h2>
     <p>
     In 2016 Hillary Clinton could become the first woman to lead the
-    United States. In <em>The World In 2015</em>, she looked ahead to the 20th anniversary
+    United States. In <em>The World in 2015</em>, she looked ahead to the 20th anniversary
     of the UN's World Conference on Women noting that there is still much to do if
     women are to enjoy the same opportunities as men.
     </p>`,
-    byline: 'From The World In 2015',
+    byline: 'From The World in 2015',
     url: '/article/12073',
   },
   {
@@ -38,7 +38,7 @@ const entries = [
     war in British history called "Great", Ann Wroe, <i>The Economist's</i> obituaries
     editor, hoped that Europe’s commemorations during 2014 might perhaps end a 100-year haunting.
     </p>`,
-    byline: 'From The World In 2014',
+    byline: 'From The World in 2014',
     url: '/article/12072',
   },
   {
@@ -47,12 +47,12 @@ const entries = [
     image: 'assets/30.png',
     bodycopy: `<h2>The lottery of life</h2>
     <p>
-    In <em>The World In 1988</em>, The Economist Intelligence Unit (EIU) ranked 50 countries according
+    In <em>The World in 1988</em>, The Economist Intelligence Unit (EIU) ranked 50 countries according
     to where would be the best place to be born in 1988; America topped the list.
     Twenty-five years later, Laza Kekic of the EIU revisited the index to find
     out where might be the best place for a lucky baby born in 2013.
     </p>`,
-    byline: 'The World In 2013',
+    byline: 'The World in 2013',
     url: '/article/12071',
   },
   {
@@ -65,7 +65,7 @@ const entries = [
     media would have an ever-deepening impact on everything from our private
     lives to presidential politics.
     </p>`,
-    byline: 'From The World In 2012',
+    byline: 'From The World in 2012',
     url: '/article/12070',
   },
   {
@@ -80,7 +80,7 @@ const entries = [
     then The Economist's globalisation correspondent, took a calmer view,
     arguing that the underlying rate of population growth was, in fact, slowing.
     </p>`,
-    byline: 'From The World In 2011',
+    byline: 'From The World in 2011',
     url: '/article/12069',
   },
   {
@@ -89,12 +89,12 @@ const entries = [
     image: 'assets/02.png',
     bodycopy: `<h2>Space, the fiscal frontier</h2>
     <p>
-    Space may well be the final frontier for disruption. In <em>The World In 2010</em>
+    Space may well be the final frontier for disruption. In <em>The World in 2010</em>
     Elon Musk, CEO and chief technology officer of SpaceX, made the case for
     commercial space travel, arguing that only the private sector is capable
     of advancing the cause of space exploration and travel.
     </p>`,
-    byline: 'From The World In 2010',
+    byline: 'From The World in 2010',
     url: '/article/12068',
   },
   {
@@ -104,12 +104,12 @@ const entries = [
     bodycopy: `<h2>About 2008: sorry</h2>
     <p>
     The financial crisis of 2008 caught everyone by surprise—not least, it must
-    be admitted with a flush of embarrassment, <em>The World In</em>. Our editor used
+    be admitted with a flush of embarrassment, <em>The World in</em>. Our editor used
     his annual column of hits and misses to come clean about failing to spot the
     biggest financial crisis since the Depression but offered two-and-a-half
     reasons to keep reading our predictions.
     </p>`,
-    byline: 'From The World In 2009',
+    byline: 'From The World in 2009',
     url: '/article/12067',
   },
   {
@@ -124,7 +124,7 @@ const entries = [
     John Grimond, writer at large for The Economist and husband of Ian Fleming's
     niece, looked at what makes Bond such an enduring cultural character.
     </p>`,
-    byline: 'From The World In 2008',
+    byline: 'From The World in 2008',
     url: '/article/12066',
   },
   {
@@ -135,11 +135,11 @@ const entries = [
     <p>
     In the 1990s a wonderful new way of working beckoned: a world where it would
     be possible to work when and where you wanted and enjoy that elusive
-    ideal—work-life balance. In <em>The World In 2007</em>,  Lucy Kellaway of the
+    ideal—work-life balance. In <em>The World in 2007</em>,  Lucy Kellaway of the
     Financial Times not only lamented the revolution that never arrived but
     predicted that long hours would be back with a vengeance.
     </p>`,
-    byline: 'From The World In 2009',
+    byline: 'From The World in 2009',
     url: '/article/12065',
   },
   {
@@ -148,9 +148,9 @@ const entries = [
     image: 'assets/32.png',
     bodycopy: `<h2>Looking back on the future</h2>
     <p>
-    For The World In...'s 20th edition, we invited an historian, Niall Ferguson, to take a critical look at our record
+    For The World in...'s 20th edition, we invited an historian, Niall Ferguson, to take a critical look at our record
     </p>`,
-    byline: 'From The World In 2006',
+    byline: 'From The World in 2006',
     url: '/article/12064',
   },
   {
@@ -161,11 +161,11 @@ const entries = [
     <p>
     In 2004 digital cameras outsold film cameras for the first time—but both
     were outstripped by sales of camera-phones, even though the quality of such
-    cameras was hopelessly inferior. In <em>The World In 2005</em>, Tom Standage, then
+    cameras was hopelessly inferior. In <em>The World in 2005</em>, Tom Standage, then
     The Economist's technology editor, predicted that phone technology might
     improve enough to compete with digital cameras—eventually.
     </p>`,
-    byline: 'From The World In 2005',
+    byline: 'From The World in 2005',
     url: '/article/12063',
   },
   {
@@ -178,7 +178,7 @@ const entries = [
     expansion of the union to date. Vaclav Havel, former president of the
     Czech Republic, looked ahead to a larger, livelier European Union.
     </p>`,
-    byline: 'From The World In 2004',
+    byline: 'From The World in 2004',
     url: '/article/12062',
   },
   {
@@ -192,7 +192,7 @@ const entries = [
     In 2003, however, Pam Woodall, the economics editor of The Economist at the
     time, took a gloomy view of the housing market and predicted that the bubble would burst.
     </p>`,
-    byline: 'From The World In 2003',
+    byline: 'From The World in 2003',
     url: '/article/12061',
   },
   {
@@ -206,7 +206,7 @@ const entries = [
     that the single currency's impact would go far beyond being simply a new way
     to pay at the supermarket. It would alter forever Europe's view both of itself and of the world.
     </p>`,
-    byline: 'From The World In 2002',
+    byline: 'From The World in 2002',
     url: '/article/12060',
   },
   {
@@ -220,7 +220,7 @@ const entries = [
     place to live. Pointing, among other things, to Osama bin Laden's presence
     there, the EIU forecast that life in Afghanistan was going to get even worse.
     </p>`,
-    byline: 'From The World In 2001',
+    byline: 'From The World in 2001',
     url: '/article/12059',
   },
   {
@@ -231,7 +231,7 @@ const entries = [
     <p>
     Peter Drucker, the grandee of management science, took an early look at the disruptive power of e-commerce.
     </p>`,
-    byline: 'From The World In 2000',
+    byline: 'From The World in 2000',
     url: '/article/12058',
   },
   {
@@ -245,7 +245,7 @@ const entries = [
     at The Economist at the time, asserted that it also gave the world a new rule:
     that no undemocratic state could expect its sovereignty to remain untouched.
     </p>`,
-    byline: 'From The World In 1999',
+    byline: 'From The World in 1999',
     url: '/article/12057',
   },
   {
@@ -254,11 +254,11 @@ const entries = [
     image: 'assets/03.png',
     bodycopy: `<h2>The Web lifestyle</h2>
     <p>
-    Writing for <em>The World In 1998</em>, Microsoft's chairman. Bill Gates, forecast
+    Writing for <em>The World in 1998</em>, Microsoft's chairman. Bill Gates, forecast
     what has since become obvious: that, within a decade, the Web, as we called
     it then, would transform every facet of life.
     </p>`,
-    byline: 'From The World In 1998',
+    byline: 'From The World in 1998',
     url: '/article/12056',
   },
   {
@@ -267,11 +267,11 @@ const entries = [
     image: 'assets/14.png',
     bodycopy: `<h2>Hong Kong, July 1st</h2>
     <p>
-    On June 30th 1997 Britain handed Hong Kong back to China. In <em>The World In 1997</em>,
+    On June 30th 1997 Britain handed Hong Kong back to China. In <em>The World in 1997</em>,
     the last British governor of the territory, Christopher Patten, speculated on
     whether Hong Kong would survive as a democratic, free-market economy.
     </p>`,
-    byline: 'From The World In 1997',
+    byline: 'From The World in 1997',
     url: '/article/12055',
   },
   {
@@ -280,10 +280,10 @@ const entries = [
     image: 'assets/20.png',
     bodycopy: `<h2>A Labour Britain's promise</h2>
     <p>
-    <em>The World In 1996</em> asked Tony Blair, then Britain's opposition leader, to spell
+    <em>The World in 1996</em> asked Tony Blair, then Britain's opposition leader, to spell
     out his ideas for the country in the coming year.
     </p>`,
-    byline: 'From The World In 1996',
+    byline: 'From The World in 1996',
     url: '/article/12048',
   },
   {
@@ -295,7 +295,7 @@ const entries = [
     Tom Peters, a management guru, made a plea for businesses to embrace the
     crazy and be more innovative, adventurous and imaginative.
     </p>`,
-    byline: 'From The World In 1995',
+    byline: 'From The World in 1995',
     url: '/article/12046',
   },
   {
@@ -309,7 +309,7 @@ const entries = [
     finance editor at The Economist, predicted that markets in some emerging
     economies were about to enter the fray.
     </p>`,
-    byline: 'From The World In 1994',
+    byline: 'From The World in 1994',
     url: '/article/12045',
   },
   {
@@ -323,7 +323,7 @@ const entries = [
     The Economist's Washington bureau chief at the time, asked whether the new
     president would be able to put his "new Democrat" ideas into practice.
     </p>`,
-    byline: 'From The World In 1993',
+    byline: 'From The World in 1993',
     url: '/article/12044',
   },
   {
@@ -335,7 +335,7 @@ const entries = [
     Paul Kennedy, a professor of history at Yale University, asked where America
     was headed 500 years after Columbus landed in the New World.
     </p>`,
-    byline: 'From The World In 1992',
+    byline: 'From The World in 1992',
     url: '/article/12043',
   },
   {
@@ -348,7 +348,7 @@ const entries = [
     Bill Emmott, then business-affairs editor of The Economist,
     predicted its property market would be next to fall to earth.
     </p>`,
-    byline: 'From The World In 1991',
+    byline: 'From The World in 1991',
     url: '/article/12042',
   },
   {
@@ -358,23 +358,23 @@ const entries = [
     bodycopy: `<h2>After communism</h2>
     <p>
     The collapse of communism in 1989 created an entirely new political and
-    economic landscape. In <em>The World In 1990</em>, Norman Macrae, The Economist's
+    economic landscape. In <em>The World in 1990</em>, Norman Macrae, The Economist's
     deputy editor at the time, pondered the economic fates of those countries
     freed by the fall of the Soviet Union.
     </p>`,
-    byline: 'From The World In 1990',
+    byline: 'From The World in 1990',
     url: '/article/12041',
   },
   {
     tabtitle: '1989',
     title: '28',
     image: 'assets/20.png',
-    bodycopy: `<h2>The World In 1989...and on to the 1990s</h2>
+    bodycopy: `<h2>The World in 1989...and on to the 1990s</h2>
     <p>
-    As a new decade loomed, Mary Goldring, editor of <em>The World In 1989</em>, took a
+    As a new decade loomed, Mary Goldring, editor of <em>The World in 1989</em>, took a
     (relatively) optimistic view of the 1990s.
     </p>`,
-    byline: 'From The World In 1989',
+    byline: 'From The World in 1989',
     url: '/article/12040',
 
   },
@@ -388,21 +388,21 @@ const entries = [
     what had been learned during the first decade of AIDS that could help to
     halt the march of a seemingly unstoppable disease.
     </p>`,
-    byline: 'From The World In 1988',
+    byline: 'From The World in 1988',
     url: '/article/11815',
   },
   {
     tabtitle: '1987',
     title: '30',
     image: 'assets/15.png',
-    bodycopy: `<h2>The World In 1987: A political outlook</h2>
+    bodycopy: `<h2>The World in 1987: A political outlook</h2>
     <p>
-    In the first edition of <em>The World In</em>..., Andrew Boyd, who wrote on foreign
+    In the first edition of <em>The World in</em>..., Andrew Boyd, who wrote on foreign
     affairs for The Economist between 1951 and 1988, looked at the challenges
     facing a lame-duck American president and his ambitious, much younger Soviet
     counterpart.
     </p>`,
-    byline: 'From The World In 1987',
+    byline: 'From The World in 1987',
   },
 ];
 export default function CoverHandler() {
