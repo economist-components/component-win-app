@@ -10,7 +10,7 @@ const entries = [
     To mark the 30th edition of the <em>The World in</em>, we have chosen one article from each
     issue to reflect three decades of forward-thinking.
     </p>`,
-    byline: 'From The World in 2000',
+    byline: 'From The World in 2016',
     url: '/article/10447/world-2016',
   },
   {
