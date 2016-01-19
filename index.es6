@@ -26,7 +26,7 @@ export default class WorldInApp extends Component {
           <Location path="/" handler={HomePageHandler} />
           <Location path="/article/:id" handler={ArticlePageHandler} />
           <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
-          <Location path="/30years" handler={CoverHandler} />
+          <Location path="/30-years-of-the-world-in" handler={CoverHandler} />
           <NotFound handler={NotFoundHandler}/>
         </Locations>
       </App>
