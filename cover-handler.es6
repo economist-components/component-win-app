@@ -156,7 +156,7 @@ const entries = [
   {
     tabtitle: '2005',
     title: '11',
-    clipPath: 'year2015',
+    clipPath: 'year2005',
     bodycopy: `<h2>The age of phonography</h2>
     <p>
     In 2004 digital cameras outsold film cameras for the first time—but both
@@ -251,7 +251,7 @@ const entries = [
   {
     tabtitle: '1998',
     title: '18',
-    clipPath: 'year1988',
+    clipPath: 'year1998',
     bodycopy: `<h2>The Web lifestyle</h2>
     <p>
     Writing for <em>The World in 1998</em>, Microsoft's chairman. Bill Gates, forecast
