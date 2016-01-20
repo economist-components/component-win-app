@@ -5,6 +5,7 @@ import App from './app';
 import NotFoundHandler from '@economist/component-404';
 import HomePageHandler from './homepage';
 import ArticlePageHandler from './articlepage';
+import CoverHandler from './cover-handler';
 
 /* eslint-disable id-match */
 export default class WorldInApp extends Component {
@@ -25,6 +26,7 @@ export default class WorldInApp extends Component {
           <Location path="/" handler={HomePageHandler} />
           <Location path="/article/:id" handler={ArticlePageHandler} />
           <Location path="/article/:id/:slug" handler={ArticlePageHandler} />
+          <Location path="/30-years-of-the-world-in" handler={CoverHandler} />
           <NotFound handler={NotFoundHandler}/>
         </Locations>
       </App>
